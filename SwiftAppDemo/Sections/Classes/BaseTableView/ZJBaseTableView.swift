@@ -8,9 +8,9 @@
 
 import UIKit
 
-class ZJBaseTableView: UIView {
+class ZJBaseTableView<T>: UIView, UITableViewDataSource, UITableViewDelegate {
     
-    var dataArray: [Any]?
+    var dataArray: [T]?
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -33,9 +33,7 @@ class ZJBaseTableView: UIView {
         
         return tableView
     }()
-}
-
-extension ZJBaseTableView: UITableViewDataSource, UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.dataArray?.count ?? 0
     }
@@ -49,7 +47,7 @@ extension ZJBaseTableView: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
-    @objc func tableView(_ tableView: UITableView, dequeReusableCellAtIndexPath: IndexPath) -> ZJBaseTableViewCell {
+    func tableView(_ tableView: UITableView, dequeReusableCellAtIndexPath: IndexPath) -> ZJBaseTableViewCell<T> {
         return tableView.dequeReusableCell(indexPath: dequeReusableCellAtIndexPath) as ZJBaseTableViewCell
     }
     
@@ -61,7 +59,7 @@ extension ZJBaseTableView: UITableViewDataSource, UITableViewDelegate {
         return 1
     }
     
-    func getDataAtIndexPath(indexPath: IndexPath) -> Any? {
+    func getDataAtIndexPath(indexPath: IndexPath) -> T? {
         guard let dataArray = dataArray, indexPath.row < dataArray.count else {
             return nil
         }
@@ -84,7 +82,7 @@ extension ZJBaseTableView: UITableViewDataSource, UITableViewDelegate {
         return .middle
     }
     
-    func updateByDataArray(dataArray: [Any]?) {
+    func updateByDataArray(dataArray: [T]?) {
         self.dataArray = dataArray
         self.mTableView.reloadData()
     }

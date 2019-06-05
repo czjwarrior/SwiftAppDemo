@@ -15,9 +15,9 @@ enum ZJCellPosition {
     case onlyOne
 }
 
-class ZJBaseTableViewCell: UITableViewCell, ZJReusableCell {
+class ZJBaseTableViewCell<T>: UITableViewCell, ZJReusableCell {
     
-    var dataModel: Any?
+    var dataModel: T?
     var cellPosition: ZJCellPosition = .top
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -32,13 +32,13 @@ class ZJBaseTableViewCell: UITableViewCell, ZJReusableCell {
         fatalError("init(coder:) has not been implemented")
     }
 
-    func updateByData(data: Any?) {
+    func updateByData(data: T?) {
         guard data != nil else { return }
 
         self.dataModel = data
     }
 
-    func updateByData(data: Any?, position: ZJCellPosition) {
+    func updateByData(data: T?, position: ZJCellPosition) {
         self.cellPosition = position
         self.updateByData(data: data)
     }

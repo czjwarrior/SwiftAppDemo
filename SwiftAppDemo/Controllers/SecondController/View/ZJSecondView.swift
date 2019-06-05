@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ZJSecondView: ZJBaseTableView {
+class ZJSecondView: ZJBaseTableView<String> {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -24,7 +24,7 @@ class ZJSecondView: ZJBaseTableView {
         tableView.registerCell(ZJSecondCell.self)
     }
     
-    override func tableView(_ tableView: UITableView, dequeReusableCellAtIndexPath: IndexPath) -> ZJBaseTableViewCell {
+    override func tableView(_ tableView: UITableView, dequeReusableCellAtIndexPath: IndexPath) -> ZJBaseTableViewCell<String> {
         return tableView.dequeReusableCell(indexPath: dequeReusableCellAtIndexPath) as ZJSecondCell
     }
 }

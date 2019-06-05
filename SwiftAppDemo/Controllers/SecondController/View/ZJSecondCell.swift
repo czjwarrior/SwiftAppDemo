@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ZJSecondCell: ZJBaseTableViewCell {
+class ZJSecondCell: ZJBaseTableViewCell<String> {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -33,13 +33,10 @@ class ZJSecondCell: ZJBaseTableViewCell {
         return label
     }()
 
-    override func updateByData(data: Any?) {
+    override func updateByData(data: String?) {
         super.updateByData(data: data)
-        guard let itemData = data as? String else {
-            return
-        }
         
-        self.title.text = itemData
+        self.title.text = data
         
         self.layoutSubviews()
     }
