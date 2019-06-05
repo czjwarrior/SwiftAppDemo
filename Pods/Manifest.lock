@@ -1,0 +1,43 @@
+PODS:
+  - ESTabBarController-swift (2.7)
+  - EZSwiftExtensions (2.0)
+  - "NSObject+Rx (5.0.0)":
+    - RxSwift (~> 5.0)
+  - RxCocoa (5.0.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
+  - SnapKit (5.0.0)
+
+DEPENDENCIES:
+  - ESTabBarController-swift
+  - EZSwiftExtensions
+  - "NSObject+Rx"
+  - RxCocoa (~> 5)
+  - RxSwift (~> 5)
+  - SnapKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ESTabBarController-swift
+    - EZSwiftExtensions
+    - "NSObject+Rx"
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SnapKit
+
+SPEC CHECKSUMS:
+  ESTabBarController-swift: 4fb52ad03d94d0717ef97bc9eb09a5abfdded0a2
+  EZSwiftExtensions: f73648a591e529a1dbd83c22b19fd3e57df6fb7d
+  "NSObject+Rx": 6151a97d171f7187c4183746acc42d9451952a7b
+  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+
+PODFILE CHECKSUM: 403fd7a232a5a4fe813d6feca2971b94af65b39b
+
+COCOAPODS: 1.6.1
