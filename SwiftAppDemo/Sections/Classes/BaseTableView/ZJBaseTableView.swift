@@ -44,34 +44,6 @@ class ZJBaseTableView: UIView {
     func reloadData() {
         self.mTableView.reloadData()
     }
-    
-//    func getDataAtIndexPath(indexPath: IndexPath) -> T? {
-//        guard let dataArray = dataArray, indexPath.row < dataArray.count else {
-//            return nil
-//        }
-//        return dataArray[indexPath.row]
-//    }
-//
-//    func getPositionByIndexPath(indexPath: IndexPath) -> ZJCellPosition {
-//        guard let dataArray = dataArray else {
-//            return .middle
-//        }
-//        if dataArray.count == 1 {
-//            return .onlyOne
-//        }
-//        if indexPath.row == 0 {
-//            return.top
-//        }
-//        if indexPath.row == dataArray.count - 1 {
-//            return .bottom
-//        }
-//        return .middle
-//    }
-//
-//    func updateByDataArray(dataArray: [T]?) {
-//        self.dataArray = dataArray
-//        self.mTableView.reloadData()
-//    }
 }
 
 extension ZJBaseTableView: UITableViewDataSource, UITableViewDelegate {
