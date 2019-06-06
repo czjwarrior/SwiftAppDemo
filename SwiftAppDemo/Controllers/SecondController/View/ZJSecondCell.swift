@@ -34,7 +34,6 @@ class ZJSecondCell: ZJBaseTableViewCell {
     }()
 
     func updateByData(data: String?) {
-//        super.updateByData(data: data)
         
         self.title.text = data
         
