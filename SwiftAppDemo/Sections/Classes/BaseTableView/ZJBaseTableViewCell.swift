@@ -8,13 +8,6 @@
 
 import UIKit
 
-enum ZJCellPosition {
-    case top
-    case middle
-    case bottom
-    case onlyOne
-}
-
 class ZJBaseTableViewCell<T>: UITableViewCell, ZJReusableCell {
     
     var dataModel: T?

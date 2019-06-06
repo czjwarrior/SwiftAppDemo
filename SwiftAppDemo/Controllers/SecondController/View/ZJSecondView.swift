@@ -8,12 +8,13 @@
 
 import UIKit
 
-class ZJSecondView: ZJBaseTableView<String> {
+class ZJSecondView: ZJBaseTableView {
+    
+    let dataArray = [["哈哈哈"], ["啦啦啦啦", "啪啪啪"]]
 
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        self.updateByDataArray(dataArray: ["哈哈哈", "啦啦啦啦", "啪啪啪"])
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -23,8 +24,28 @@ class ZJSecondView: ZJBaseTableView<String> {
     override func registerCell(tableView: UITableView) {
         tableView.registerCell(ZJSecondCell.self)
     }
+}
+
+extension ZJSecondView: ZJBaseTableDataSourceProrocol {
     
-    override func tableView(_ tableView: UITableView, dequeReusableCellAtIndexPath: IndexPath) -> ZJBaseTableViewCell<String> {
-        return tableView.dequeReusableCell(indexPath: dequeReusableCellAtIndexPath) as ZJSecondCell
+    func numberOfRowsInSection(section: Int) -> Int {
+        return self.dataArray[section].count
+    }
+    
+    func numberOfSections() -> Int {
+        return self.dataArray.count
+    }
+    
+//    func cellForRowAt(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeReusableCell(indexPath: indexPath) as ZJSecondCell
+//
+//        cell.updateByData(data: self.dataArray[indexPath.section][indexPath.row])
+//        cell.cellPosition = tableView.getCellPosition(dataArray: dataArray,
+//                                                      indexPath: indexPath)
+//        return cell
+//    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("sdsdsds")
     }
 }

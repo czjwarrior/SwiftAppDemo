@@ -51,5 +51,9 @@ class ZJSecondCell: ZJBaseTableViewCell<String> {
         if self.cellPosition == .bottom {
             self.contentView.roundCorners([.bottomLeft, .bottomRight], radius: 12)
         }
+        
+        if self.cellPosition == .onlyOne {
+            self.contentView.roundCorners([.topLeft, .topRight, .bottomLeft, .bottomRight], radius: 12)
+        }
     }
 }

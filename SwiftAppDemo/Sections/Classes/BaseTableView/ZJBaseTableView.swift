@@ -8,12 +8,14 @@
 
 import UIKit
 
-class ZJBaseTableView<T>: UIView, UITableViewDataSource, UITableViewDelegate {
+class ZJBaseTableView: UIView {
     
-    var dataArray: [T]?
+    weak var tableViewDelegate: ZJBaseTableDataSourceProrocol?
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
+        self.tableViewDelegate = self as? ZJBaseTableDataSourceProrocol
         
         self.addSubview(self.mTableView)
     }
@@ -34,56 +36,55 @@ class ZJBaseTableView<T>: UIView, UITableViewDataSource, UITableViewDelegate {
         return tableView
     }()
     
+    // 子类重写
+    func registerCell(tableView: UITableView) {
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+    }
+    
+    func reloadData() {
+        self.mTableView.reloadData()
+    }
+    
+//    func getDataAtIndexPath(indexPath: IndexPath) -> T? {
+//        guard let dataArray = dataArray, indexPath.row < dataArray.count else {
+//            return nil
+//        }
+//        return dataArray[indexPath.row]
+//    }
+//
+//    func getPositionByIndexPath(indexPath: IndexPath) -> ZJCellPosition {
+//        guard let dataArray = dataArray else {
+//            return .middle
+//        }
+//        if dataArray.count == 1 {
+//            return .onlyOne
+//        }
+//        if indexPath.row == 0 {
+//            return.top
+//        }
+//        if indexPath.row == dataArray.count - 1 {
+//            return .bottom
+//        }
+//        return .middle
+//    }
+//
+//    func updateByDataArray(dataArray: [T]?) {
+//        self.dataArray = dataArray
+//        self.mTableView.reloadData()
+//    }
+}
+
+extension ZJBaseTableView: UITableViewDataSource, UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.dataArray?.count ?? 0
+        return self.tableViewDelegate?.numberOfRowsInSection(section: section) ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = self.tableView(tableView, dequeReusableCellAtIndexPath: indexPath)
-        
-        let data = self.getDataAtIndexPath(indexPath: indexPath)
-        let position = self.getPositionByIndexPath(indexPath: indexPath)
-        cell.updateByData(data: data, position: position)
-        return cell
+        return (self.tableViewDelegate?.cellForRowAt(tableView: tableView, indexPath: indexPath))!
     }
     
-    func tableView(_ tableView: UITableView, dequeReusableCellAtIndexPath: IndexPath) -> ZJBaseTableViewCell<T> {
-        return tableView.dequeReusableCell(indexPath: dequeReusableCellAtIndexPath) as ZJBaseTableViewCell
-    }
-    
-    @objc func registerCell(tableView: UITableView) {
-        
-    }
-    
-    @objc func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    func getDataAtIndexPath(indexPath: IndexPath) -> T? {
-        guard let dataArray = dataArray, indexPath.row < dataArray.count else {
-            return nil
-        }
-        return dataArray[indexPath.row]
-    }
-    
-    func getPositionByIndexPath(indexPath: IndexPath) -> ZJCellPosition {
-        guard let dataArray = dataArray else {
-            return .middle
-        }
-        if dataArray.count == 1 {
-            return .onlyOne
-        }
-        if indexPath.row == 0 {
-            return.top
-        }
-        if indexPath.row == dataArray.count - 1 {
-            return .bottom
-        }
-        return .middle
-    }
-    
-    func updateByDataArray(dataArray: [T]?) {
-        self.dataArray = dataArray
-        self.mTableView.reloadData()
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return self.tableViewDelegate?.numberOfSections() ?? 1
     }
 }
