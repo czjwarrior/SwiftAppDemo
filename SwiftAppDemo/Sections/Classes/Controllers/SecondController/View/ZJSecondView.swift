@@ -46,6 +46,9 @@ extension ZJSecondView: ZJBaseTableDataSourceProrocol {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        ZJ_TopVc().pushVC(ZJThirdController())
+//        ZJ_TopVc().pushVC(ZJThirdController())
+//        self.makeToast("哈哈！！！")
+        
+        ZJHudView.zjShowHud(hudType: .loading, message: "哈哈")
     }
 }
