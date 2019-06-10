@@ -15,12 +15,6 @@
 		B524662822896C3400A8C362 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B524662622896C3400A8C362 /* LaunchScreen.storyboard */; };
 		B524663322896C3400A8C362 /* SwiftAppDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B524663222896C3400A8C362 /* SwiftAppDemoTests.swift */; };
 		B524663E22896C3400A8C362 /* SwiftAppDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B524663D22896C3400A8C362 /* SwiftAppDemoUITests.swift */; };
-		B524665B228994B000A8C362 /* ZJHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B524665A228994B000A8C362 /* ZJHomeController.swift */; };
-		B524665D228994C100A8C362 /* ZJFavorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B524665C228994C100A8C362 /* ZJFavorController.swift */; };
-		B524665F228994D200A8C362 /* ZJFindController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B524665E228994D200A8C362 /* ZJFindController.swift */; };
-		B5246661228994E700A8C362 /* ZJMineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5246660228994E700A8C362 /* ZJMineController.swift */; };
-		B5246664228A62EF00A8C362 /* ZJSecondController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5246663228A62EF00A8C362 /* ZJSecondController.swift */; };
-		B5246666228A706700A8C362 /* ZJThirdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5246665228A706700A8C362 /* ZJThirdController.swift */; };
 		B5246671228AABC500A8C362 /* ZJRootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B524666B228AABC500A8C362 /* ZJRootController.swift */; };
 		B5246672228AABC500A8C362 /* ZJBaseTabBarContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B524666D228AABC500A8C362 /* ZJBaseTabBarContentView.swift */; };
 		B5246673228AABC500A8C362 /* ZJBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B524666E228AABC500A8C362 /* ZJBaseTabBarController.swift */; };
@@ -33,9 +27,16 @@
 		B551062A22A7B96E00EC723B /* ZJBaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551062622A7B96E00EC723B /* ZJBaseTableView.swift */; };
 		B551062B22A7B96E00EC723B /* ZJBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551062722A7B96E00EC723B /* ZJBaseTableViewCell.swift */; };
 		B5591C6D228D197E002047C7 /* UIView+ZJAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5591C6C228D197E002047C7 /* UIView+ZJAdditions.swift */; };
-		B5C1352D229E72210004C468 /* ZJSecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C1352C229E72210004C468 /* ZJSecondView.swift */; };
-		B5C1352F229E72D80004C468 /* ZJSecondCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C1352E229E72D80004C468 /* ZJSecondCell.swift */; };
 		B5EB05BA22ADF666006219E2 /* ZJAppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB05B922ADF666006219E2 /* ZJAppHelper.swift */; };
+		B5EB05C622ADFD83006219E2 /* ZJFindController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB05BC22ADFD83006219E2 /* ZJFindController.swift */; };
+		B5EB05C722ADFD83006219E2 /* ZJMineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB05BD22ADFD83006219E2 /* ZJMineController.swift */; };
+		B5EB05C822ADFD84006219E2 /* ZJHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB05BE22ADFD83006219E2 /* ZJHomeController.swift */; };
+		B5EB05C922ADFD84006219E2 /* ZJThirdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB05C022ADFD83006219E2 /* ZJThirdController.swift */; };
+		B5EB05CA22ADFD84006219E2 /* ZJSecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB05C222ADFD83006219E2 /* ZJSecondView.swift */; };
+		B5EB05CB22ADFD84006219E2 /* ZJSecondCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB05C322ADFD83006219E2 /* ZJSecondCell.swift */; };
+		B5EB05CC22ADFD84006219E2 /* ZJSecondController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB05C422ADFD83006219E2 /* ZJSecondController.swift */; };
+		B5EB05CD22ADFD84006219E2 /* ZJFavorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB05C522ADFD83006219E2 /* ZJFavorController.swift */; };
+		B5EB05D122ADFDE7006219E2 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB05D022ADFDE7006219E2 /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,12 +71,6 @@
 		B524663922896C3400A8C362 /* SwiftAppDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftAppDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B524663D22896C3400A8C362 /* SwiftAppDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAppDemoUITests.swift; sourceTree = "<group>"; };
 		B524663F22896C3400A8C362 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B524665A228994B000A8C362 /* ZJHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJHomeController.swift; sourceTree = "<group>"; };
-		B524665C228994C100A8C362 /* ZJFavorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJFavorController.swift; sourceTree = "<group>"; };
-		B524665E228994D200A8C362 /* ZJFindController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJFindController.swift; sourceTree = "<group>"; };
-		B5246660228994E700A8C362 /* ZJMineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJMineController.swift; sourceTree = "<group>"; };
-		B5246663228A62EF00A8C362 /* ZJSecondController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJSecondController.swift; sourceTree = "<group>"; };
-		B5246665228A706700A8C362 /* ZJThirdController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJThirdController.swift; sourceTree = "<group>"; };
 		B524666B228AABC500A8C362 /* ZJRootController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJRootController.swift; sourceTree = "<group>"; };
 		B524666D228AABC500A8C362 /* ZJBaseTabBarContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJBaseTabBarContentView.swift; sourceTree = "<group>"; };
 		B524666E228AABC500A8C362 /* ZJBaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJBaseTabBarController.swift; sourceTree = "<group>"; };
@@ -88,9 +83,16 @@
 		B551062622A7B96E00EC723B /* ZJBaseTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJBaseTableView.swift; sourceTree = "<group>"; };
 		B551062722A7B96E00EC723B /* ZJBaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJBaseTableViewCell.swift; sourceTree = "<group>"; };
 		B5591C6C228D197E002047C7 /* UIView+ZJAdditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ZJAdditions.swift"; sourceTree = "<group>"; };
-		B5C1352C229E72210004C468 /* ZJSecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJSecondView.swift; sourceTree = "<group>"; };
-		B5C1352E229E72D80004C468 /* ZJSecondCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJSecondCell.swift; sourceTree = "<group>"; };
 		B5EB05B922ADF666006219E2 /* ZJAppHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJAppHelper.swift; sourceTree = "<group>"; };
+		B5EB05BC22ADFD83006219E2 /* ZJFindController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJFindController.swift; sourceTree = "<group>"; };
+		B5EB05BD22ADFD83006219E2 /* ZJMineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJMineController.swift; sourceTree = "<group>"; };
+		B5EB05BE22ADFD83006219E2 /* ZJHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJHomeController.swift; sourceTree = "<group>"; };
+		B5EB05C022ADFD83006219E2 /* ZJThirdController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJThirdController.swift; sourceTree = "<group>"; };
+		B5EB05C222ADFD83006219E2 /* ZJSecondView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJSecondView.swift; sourceTree = "<group>"; };
+		B5EB05C322ADFD83006219E2 /* ZJSecondCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJSecondCell.swift; sourceTree = "<group>"; };
+		B5EB05C422ADFD83006219E2 /* ZJSecondController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJSecondController.swift; sourceTree = "<group>"; };
+		B5EB05C522ADFD83006219E2 /* ZJFavorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJFavorController.swift; sourceTree = "<group>"; };
+		B5EB05D022ADFDE7006219E2 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		D9548E1331008146246BFAAA /* Pods-SwiftAppDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAppDemo.debug.xcconfig"; path = "Target Support Files/Pods-SwiftAppDemo/Pods-SwiftAppDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		EFE40909F3CE8568EBAB1540 /* Pods_SwiftAppDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftAppDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -166,7 +168,6 @@
 				B524667D228AB2D900A8C362 /* General */,
 				B524667A228AAE2E00A8C362 /* Macro */,
 				B5246667228AAB6900A8C362 /* Sections */,
-				B52466592289948E00A8C362 /* Controllers */,
 				B524661D22896C3300A8C362 /* AppDelegate.swift */,
 				B524661F22896C3300A8C362 /* ViewController.swift */,
 				B524662122896C3300A8C362 /* Main.storyboard */,
@@ -195,28 +196,6 @@
 			path = SwiftAppDemoUITests;
 			sourceTree = "<group>";
 		};
-		B52466592289948E00A8C362 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				B5246662228A62D600A8C362 /* SecondController */,
-				B524665A228994B000A8C362 /* ZJHomeController.swift */,
-				B524665C228994C100A8C362 /* ZJFavorController.swift */,
-				B524665E228994D200A8C362 /* ZJFindController.swift */,
-				B5246660228994E700A8C362 /* ZJMineController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		B5246662228A62D600A8C362 /* SecondController */ = {
-			isa = PBXGroup;
-			children = (
-				B5C1352B229E71FF0004C468 /* View */,
-				B5246663228A62EF00A8C362 /* ZJSecondController.swift */,
-				B5246665228A706700A8C362 /* ZJThirdController.swift */,
-			);
-			path = SecondController;
-			sourceTree = "<group>";
-		};
 		B5246667228AAB6900A8C362 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +207,9 @@
 		B5246668228AAB6900A8C362 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B5EB05CF22ADFDCE006219E2 /* ViewModel */,
+				B5EB05CE22ADFDBB006219E2 /* Coordinator */,
+				B5EB05BB22ADFD83006219E2 /* Controllers */,
 				B5EB05B822ADF657006219E2 /* Helper */,
 				B5C13524229E39F70004C468 /* BaseTableView */,
 				B524666C228AABC500A8C362 /* Base */,
@@ -283,21 +265,58 @@
 			path = BaseTableView;
 			sourceTree = "<group>";
 		};
-		B5C1352B229E71FF0004C468 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				B5C1352C229E72210004C468 /* ZJSecondView.swift */,
-				B5C1352E229E72D80004C468 /* ZJSecondCell.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		B5EB05B822ADF657006219E2 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
 				B5EB05B922ADF666006219E2 /* ZJAppHelper.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		B5EB05BB22ADFD83006219E2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B5EB05BC22ADFD83006219E2 /* ZJFindController.swift */,
+				B5EB05BD22ADFD83006219E2 /* ZJMineController.swift */,
+				B5EB05BE22ADFD83006219E2 /* ZJHomeController.swift */,
+				B5EB05BF22ADFD83006219E2 /* SecondController */,
+				B5EB05C522ADFD83006219E2 /* ZJFavorController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B5EB05BF22ADFD83006219E2 /* SecondController */ = {
+			isa = PBXGroup;
+			children = (
+				B5EB05C022ADFD83006219E2 /* ZJThirdController.swift */,
+				B5EB05C122ADFD83006219E2 /* View */,
+				B5EB05C422ADFD83006219E2 /* ZJSecondController.swift */,
+			);
+			path = SecondController;
+			sourceTree = "<group>";
+		};
+		B5EB05C122ADFD83006219E2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5EB05C222ADFD83006219E2 /* ZJSecondView.swift */,
+				B5EB05C322ADFD83006219E2 /* ZJSecondCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5EB05CE22ADFDBB006219E2 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				B5EB05D022ADFDE7006219E2 /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		B5EB05CF22ADFDCE006219E2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -493,28 +512,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				B524662022896C3300A8C362 /* ViewController.swift in Sources */,
+				B5EB05CB22ADFD84006219E2 /* ZJSecondCell.swift in Sources */,
 				B5246672228AABC500A8C362 /* ZJBaseTabBarContentView.swift in Sources */,
+				B5EB05C622ADFD83006219E2 /* ZJFindController.swift in Sources */,
 				B5246675228AABC500A8C362 /* ZJNavigationController.swift in Sources */,
-				B524665B228994B000A8C362 /* ZJHomeController.swift in Sources */,
-				B5C1352D229E72210004C468 /* ZJSecondView.swift in Sources */,
+				B5EB05CD22ADFD84006219E2 /* ZJFavorController.swift in Sources */,
+				B5EB05CA22ADFD84006219E2 /* ZJSecondView.swift in Sources */,
 				B5591C6D228D197E002047C7 /* UIView+ZJAdditions.swift in Sources */,
 				B5EB05BA22ADF666006219E2 /* ZJAppHelper.swift in Sources */,
-				B5246661228994E700A8C362 /* ZJMineController.swift in Sources */,
+				B5EB05CC22ADFD84006219E2 /* ZJSecondController.swift in Sources */,
 				B551062B22A7B96E00EC723B /* ZJBaseTableViewCell.swift in Sources */,
 				B5246673228AABC500A8C362 /* ZJBaseTabBarController.swift in Sources */,
-				B5246666228A706700A8C362 /* ZJThirdController.swift in Sources */,
+				B5EB05D122ADFDE7006219E2 /* AppCoordinator.swift in Sources */,
 				B524667C228AAE9700A8C362 /* ZJCommonDefine.swift in Sources */,
-				B524665D228994C100A8C362 /* ZJFavorController.swift in Sources */,
+				B5EB05C722ADFD83006219E2 /* ZJMineController.swift in Sources */,
 				B551062822A7B96E00EC723B /* UITableView+ZJAdditions.swift in Sources */,
 				B5246679228AACA500A8C362 /* ZJBaseControllerView.swift in Sources */,
-				B524665F228994D200A8C362 /* ZJFindController.swift in Sources */,
 				B551062A22A7B96E00EC723B /* ZJBaseTableView.swift in Sources */,
 				B5246671228AABC500A8C362 /* ZJRootController.swift in Sources */,
 				B5246677228AAC1400A8C362 /* ZJBaseLayoutController.swift in Sources */,
 				B5246674228AABC500A8C362 /* ZJBaseViewController.swift in Sources */,
-				B5C1352F229E72D80004C468 /* ZJSecondCell.swift in Sources */,
+				B5EB05C822ADFD84006219E2 /* ZJHomeController.swift in Sources */,
+				B5EB05C922ADFD84006219E2 /* ZJThirdController.swift in Sources */,
 				B524661E22896C3300A8C362 /* AppDelegate.swift in Sources */,
-				B5246664228A62EF00A8C362 /* ZJSecondController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,5 +8,7 @@ pod 'RxCocoa', '~> 5'
 pod 'NSObject+Rx'
 pod 'SnapKit'
 pod 'EZSwiftExtensions'
+pod 'Toast-Swift', '~> 5.0.0'
+pod 'PKHUD', '~> 5.0'
 
 end
