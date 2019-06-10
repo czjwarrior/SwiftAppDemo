@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5DB13A3A22350DF91BDCB18498611257"
+               BlueprintIdentifier = "EF1C217118CF22144902D022454149F9"
                BuildableName = "EZSwiftExtensions.framework"
                BlueprintName = "EZSwiftExtensions"
                ReferencedContainer = "container:Pods.xcodeproj">
