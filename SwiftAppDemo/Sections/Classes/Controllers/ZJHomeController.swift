@@ -30,10 +30,10 @@ class ZJHomeController: ZJBaseLayoutController {
     
     lazy var btnClick: UIButton = {
         let btn = UIButton.init(type: .system)
-        btn.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
+        btn.frame = CGRect(x: 100, y: 100, width: 100, height: 100)~
         
         btn.setTitle("测试", for: .normal)
-        btn.titleLabel?.font = UIFont.systemFont(ofSize: 24)
+        btn.titleLabel?.font = UIFont.systemFont(ofSize: 24)~
         btn.backgroundColor = UIColor.red
         
         return btn

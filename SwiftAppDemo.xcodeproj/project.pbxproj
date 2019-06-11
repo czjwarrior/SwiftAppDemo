@@ -40,6 +40,7 @@
 		B5EB05D722AE3A5D006219E2 /* UIView+ZJAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB05D622AE3A5D006219E2 /* UIView+ZJAdditions.swift */; };
 		B5EB05DB22AE3AA4006219E2 /* ZJHudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB05DA22AE3AA4006219E2 /* ZJHudView.swift */; };
 		B5EB05DD22AE3AE1006219E2 /* ZJHudCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB05DC22AE3AE1006219E2 /* ZJHudCustomView.swift */; };
+		B5EB05E222AE66A9006219E2 /* ZJAdaptUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB05E122AE66A9006219E2 /* ZJAdaptUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,8 @@
 		B5EB05D622AE3A5D006219E2 /* UIView+ZJAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ZJAdditions.swift"; sourceTree = "<group>"; };
 		B5EB05DA22AE3AA4006219E2 /* ZJHudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJHudView.swift; sourceTree = "<group>"; };
 		B5EB05DC22AE3AE1006219E2 /* ZJHudCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJHudCustomView.swift; sourceTree = "<group>"; };
+		B5EB05E022AE58B9006219E2 /* SwiftAppDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftAppDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		B5EB05E122AE66A9006219E2 /* ZJAdaptUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJAdaptUtil.swift; sourceTree = "<group>"; };
 		D9548E1331008146246BFAAA /* Pods-SwiftAppDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAppDemo.debug.xcconfig"; path = "Target Support Files/Pods-SwiftAppDemo/Pods-SwiftAppDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		EFE40909F3CE8568EBAB1540 /* Pods_SwiftAppDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftAppDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -277,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				B5EB05B922ADF666006219E2 /* ZJAppHelper.swift */,
+				B5EB05E122AE66A9006219E2 /* ZJAdaptUtil.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -331,6 +335,7 @@
 			isa = PBXGroup;
 			children = (
 				B5EB05D322AE3862006219E2 /* ZJCommonHeader.swift */,
+				B5EB05E022AE58B9006219E2 /* SwiftAppDemo-Bridging-Header.h */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -535,6 +540,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5EB05E222AE66A9006219E2 /* ZJAdaptUtil.swift in Sources */,
 				B524662022896C3300A8C362 /* ViewController.swift in Sources */,
 				B5EB05CB22ADFD84006219E2 /* ZJSecondCell.swift in Sources */,
 				B5246672228AABC500A8C362 /* ZJBaseTabBarContentView.swift in Sources */,
@@ -747,6 +753,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cenzhijun.SwiftAppDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftAppDemo/Common/SwiftAppDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -767,6 +774,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cenzhijun.SwiftAppDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftAppDemo/Common/SwiftAppDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

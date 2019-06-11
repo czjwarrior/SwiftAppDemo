@@ -9,24 +9,52 @@
 import UIKit
 import PKHUD
 
-class ZJHudView: PKHUD {
+class ZJHudView: MBProgressHUD {
     
-    init(type: ZJHudType, message: String) {
-        super.init()
-        
-        self.viewToPresentOn = UIApplication.shared.keyWindow!
-        self.contentView = ZJHudCustomView(type: type, message: message)
-        self.show()
-        self.hide(afterDelay: 2.0)
-        
-        
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
     
+    init(view: UIView, type: ZJHudType, message: String, animated: Bool = true) {
+        super.init(view: view)
+        
+        self.bezelView.backgroundColor = .clear
+        self.mode = .customView
+        self.removeFromSuperViewOnHide = true
+        
+        let customView = ZJHudCustomView(type: type, message: message)
+        self.customView = customView
+        
+        print("sdasd")
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     @discardableResult
-    class func zjShowHud(hudType: ZJHudType, message: String = "") -> ZJHudView {
-        let hudView = ZJHudView(type: hudType, message: message)
+    class func zjShowHud(view: UIView, hudType: ZJHudType, message: String = "", _ animated: Bool = true) -> ZJHudView {
+        
+        let hudView = ZJHudView(view: view, type: hudType, message: message, animated: animated)
+        if hudType == .loading {
+            hudView.animationType = .fade
+            
+            hudView.show(animated: animated)
+            
+        } else {
+            hudView.animationType = .zoomIn
+            
+            hudView.show(animated: animated)
+            hudView.hide(animated: animated, afterDelay: 2.0)
+        }
+        view.addSubview(hudView)
         
         return hudView
+    }
+    
+    class func zjShowHud(hudType: ZJHudType, message: String = "") {
+        
+        let window = UIApplication.shared.keyWindow
+        self.zjShowHud(view: window!, hudType: hudType, message: message)
     }
 }
