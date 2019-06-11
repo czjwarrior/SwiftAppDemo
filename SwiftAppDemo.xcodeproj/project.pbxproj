@@ -161,6 +161,13 @@
 			path = Empty;
 			sourceTree = "<group>";
 		};
+		B524003922AFCF91001ADA25 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
 		B524661122896C3300A8C362 = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +196,7 @@
 				B5EB05D222AE384E006219E2 /* Common */,
 				B524667D228AB2D900A8C362 /* General */,
 				B524667A228AAE2E00A8C362 /* Macro */,
+				B524003922AFCF91001ADA25 /* Vendors */,
 				B5246667228AAB6900A8C362 /* Sections */,
 				B524661D22896C3300A8C362 /* AppDelegate.swift */,
 				B524661F22896C3300A8C362 /* ViewController.swift */,
@@ -562,6 +570,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5EB05D422AE3862006219E2 /* ZJCommonHeader.swift in Sources */,
 				B524003822AFAFC1001ADA25 /* ZJEmptyView.swift in Sources */,
 				B524003422AFA428001ADA25 /* ZJBaseTableViewController.swift in Sources */,
 				B5EB05E222AE66A9006219E2 /* ZJAdaptUtil.swift in Sources */,
@@ -587,7 +596,6 @@
 				B5246677228AAC1400A8C362 /* ZJBaseLayoutController.swift in Sources */,
 				B5246674228AABC500A8C362 /* ZJBaseViewController.swift in Sources */,
 				B5EB05C822ADFD84006219E2 /* ZJHomeController.swift in Sources */,
-				B5EB05D422AE3862006219E2 /* ZJCommonHeader.swift in Sources */,
 				B5EB05C922ADFD84006219E2 /* ZJThirdController.swift in Sources */,
 				B5EB05D722AE3A5D006219E2 /* UIView+ZJAdditions.swift in Sources */,
 				B5EB05DB22AE3AA4006219E2 /* ZJHudView.swift in Sources */,

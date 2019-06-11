@@ -92,6 +92,7 @@ extension ZJBaseTableDataSourceProrocol {
     
     func cellForRowAt(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
+        cell?.backgroundColor = .clear
         return cell ?? UITableViewCell.init(style: .default, reuseIdentifier: "ZJBaseTableViewCell")
     }
     

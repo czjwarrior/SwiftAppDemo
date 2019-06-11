@@ -7,9 +7,6 @@
 //
 
 import UIKit
-import RxSwift
-import RxCocoa
-import NSObject_Rx
 
 class ZJBaseLayoutController: ZJBaseViewController {
     
@@ -27,14 +24,14 @@ class ZJBaseLayoutController: ZJBaseViewController {
 
         // Do any additional setup after loading the view.
         self.changeColorInRegion(region: .navigationBar, color: ZJ_WHITE_COLOR)
-        self.baseView.popBtn.rx.tap.subscribe(onNext: { (_) in
+        self.baseView.popBtn.rx.tap.subscribe(onNext: { [weak self] (_) in
             
-            self.navigationController?.popViewController(animated: true)
+            self?.navigationController?.popViewController(animated: true)
             
         }).disposed(by: rx.disposeBag)
         
-        self.rx.observe(String.self, "title").subscribe(onNext: { (title) in
-            self.baseView.titleLabel.text = title
+        self.rx.observeWeakly(String.self, "title").subscribe(onNext: { [weak self] (title) in
+            self?.baseView.titleLabel.text = title
         }).disposed(by: rx.disposeBag)
         
     }

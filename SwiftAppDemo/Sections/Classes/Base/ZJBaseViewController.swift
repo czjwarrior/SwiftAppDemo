@@ -11,6 +11,7 @@ import DZNEmptyDataSet
 
 class ZJBaseViewController: UIViewController {
 
+    let isLoading = BehaviorRelay(value: false)
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,6 +27,9 @@ class ZJBaseViewController: UIViewController {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
+    deinit {
+        print("释放了。。。")
+    }
     
     // 处理重复点击tabBar事件 <前提：该ZJBaseViewController为根视图>
     func handleTabBarRootMutiClicked() {
@@ -57,6 +61,6 @@ extension ZJBaseViewController: DZNEmptyDataSetSource {
 
 extension ZJBaseViewController: DZNEmptyDataSetDelegate {
     func emptyDataSetShouldDisplay(_ scrollView: UIScrollView!) -> Bool {
-        return true
+        return !isLoading.value
     }
 }

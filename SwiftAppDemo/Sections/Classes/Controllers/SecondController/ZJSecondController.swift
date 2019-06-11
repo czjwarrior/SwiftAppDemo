@@ -10,7 +10,7 @@ import UIKit
 
 class ZJSecondController: ZJBaseTableViewController {
     
-    let dataArray = [[String]]()
+    let dataArray = [["哈哈哈"], ["啦啦啦啦", "啪啪啪"]]
 
     override func viewDidLoad() {
         super.viewDidLoad()
