@@ -52,5 +52,4 @@ class ZJBaseLayoutController: ZJBaseViewController {
     func addToContentView(_ view: UIView) {
         self.baseView.addToContentView(view)
     }
-
 }

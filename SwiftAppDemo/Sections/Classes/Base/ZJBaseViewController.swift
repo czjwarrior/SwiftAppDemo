@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DZNEmptyDataSet
 
 class ZJBaseViewController: UIViewController {
 
@@ -30,5 +31,32 @@ class ZJBaseViewController: UIViewController {
     func handleTabBarRootMutiClicked() {
         
     }
+}
 
+extension ZJBaseViewController: DZNEmptyDataSetSource {
+    func customView(forEmptyDataSet scrollView: UIScrollView!) -> UIView! {
+        
+        let emptyView = ZJEmptyView(frame: self.view.bounds)
+        emptyView.update(imageName: self.emptyDataImageName(),
+                         title: self.emptyDataTitleStr())
+        return emptyView
+    }
+    
+    func verticalOffset(forEmptyDataSet scrollView: UIScrollView!) -> CGFloat {
+        return -(kScreenHeight / 2 - kNaviHeight) - 20~
+    }
+    
+    @objc func emptyDataImageName() -> String {
+        return "zj_default_empty"
+    }
+    
+    @objc func emptyDataTitleStr() -> String {
+        return "暂无数据"
+    }
+}
+
+extension ZJBaseViewController: DZNEmptyDataSetDelegate {
+    func emptyDataSetShouldDisplay(_ scrollView: UIScrollView!) -> Bool {
+        return true
+    }
 }

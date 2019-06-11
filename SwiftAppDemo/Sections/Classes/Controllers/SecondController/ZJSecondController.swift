@@ -10,7 +10,7 @@ import UIKit
 
 class ZJSecondController: ZJBaseTableViewController {
     
-    let dataArray = [["哈哈哈"], ["啦啦啦啦", "啪啪啪"]]
+    let dataArray = [[String]]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +18,6 @@ class ZJSecondController: ZJBaseTableViewController {
         // Do any additional setup after loading the view.
         self.baseView.showPopBtn()
         self.title = "二级页面"
-        
     }
     
     override func registerCell(tableView: UITableView) {

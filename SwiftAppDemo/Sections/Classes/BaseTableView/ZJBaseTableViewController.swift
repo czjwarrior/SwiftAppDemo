@@ -29,6 +29,9 @@ class ZJBaseTableViewController: ZJBaseLayoutController {
         tableView.delegate = self
         tableView.dataSource = self
         
+        tableView.emptyDataSetSource = self
+        tableView.emptyDataSetDelegate = self
+        
         self.registerCell(tableView: tableView)
         
         return tableView

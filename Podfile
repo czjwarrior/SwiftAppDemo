@@ -17,5 +17,6 @@ pod 'PKHUD', '~> 5.0'
 pod 'MBProgressHUD', '~> 0.9'
 pod 'Moya/RxSwift', '~> 13.0'
 pod 'HandyJSON', '~> 5.0.0'
+pod 'DZNEmptyDataSet', '~> 1.8.1'
 
 end
