@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2EF664A42ACAEF0508782EA3 /* Pods_SwiftAppDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE40909F3CE8568EBAB1540 /* Pods_SwiftAppDemo.framework */; };
+		B524003222AFA2EA001ADA25 /* ZJSecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B524003122AFA2EA001ADA25 /* ZJSecondViewModel.swift */; };
+		B524003422AFA428001ADA25 /* ZJBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B524003322AFA428001ADA25 /* ZJBaseTableViewController.swift */; };
 		B524661E22896C3300A8C362 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B524661D22896C3300A8C362 /* AppDelegate.swift */; };
 		B524662022896C3300A8C362 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B524661F22896C3300A8C362 /* ViewController.swift */; };
 		B524662322896C3300A8C362 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B524662122896C3300A8C362 /* Main.storyboard */; };
@@ -31,7 +33,6 @@
 		B5EB05C722ADFD83006219E2 /* ZJMineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB05BD22ADFD83006219E2 /* ZJMineController.swift */; };
 		B5EB05C822ADFD84006219E2 /* ZJHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB05BE22ADFD83006219E2 /* ZJHomeController.swift */; };
 		B5EB05C922ADFD84006219E2 /* ZJThirdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB05C022ADFD83006219E2 /* ZJThirdController.swift */; };
-		B5EB05CA22ADFD84006219E2 /* ZJSecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB05C222ADFD83006219E2 /* ZJSecondView.swift */; };
 		B5EB05CB22ADFD84006219E2 /* ZJSecondCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB05C322ADFD83006219E2 /* ZJSecondCell.swift */; };
 		B5EB05CC22ADFD84006219E2 /* ZJSecondController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB05C422ADFD83006219E2 /* ZJSecondController.swift */; };
 		B5EB05CD22ADFD84006219E2 /* ZJFavorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB05C522ADFD83006219E2 /* ZJFavorController.swift */; };
@@ -62,6 +63,8 @@
 
 /* Begin PBXFileReference section */
 		3765D05FEE218620CE782176 /* Pods-SwiftAppDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAppDemo.release.xcconfig"; path = "Target Support Files/Pods-SwiftAppDemo/Pods-SwiftAppDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B524003122AFA2EA001ADA25 /* ZJSecondViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJSecondViewModel.swift; sourceTree = "<group>"; };
+		B524003322AFA428001ADA25 /* ZJBaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJBaseTableViewController.swift; sourceTree = "<group>"; };
 		B524661A22896C3300A8C362 /* SwiftAppDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAppDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B524661D22896C3300A8C362 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B524661F22896C3300A8C362 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -91,7 +94,6 @@
 		B5EB05BD22ADFD83006219E2 /* ZJMineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJMineController.swift; sourceTree = "<group>"; };
 		B5EB05BE22ADFD83006219E2 /* ZJHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJHomeController.swift; sourceTree = "<group>"; };
 		B5EB05C022ADFD83006219E2 /* ZJThirdController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJThirdController.swift; sourceTree = "<group>"; };
-		B5EB05C222ADFD83006219E2 /* ZJSecondView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJSecondView.swift; sourceTree = "<group>"; };
 		B5EB05C322ADFD83006219E2 /* ZJSecondCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJSecondCell.swift; sourceTree = "<group>"; };
 		B5EB05C422ADFD83006219E2 /* ZJSecondController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJSecondController.swift; sourceTree = "<group>"; };
 		B5EB05C522ADFD83006219E2 /* ZJFavorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJFavorController.swift; sourceTree = "<group>"; };
@@ -273,6 +275,7 @@
 				B551062422A7B96E00EC723B /* UITableView+ZJAdditions.swift */,
 				B551062622A7B96E00EC723B /* ZJBaseTableView.swift */,
 				B551062722A7B96E00EC723B /* ZJBaseTableViewCell.swift */,
+				B524003322AFA428001ADA25 /* ZJBaseTableViewController.swift */,
 			);
 			path = BaseTableView;
 			sourceTree = "<group>";
@@ -311,7 +314,6 @@
 		B5EB05C122ADFD83006219E2 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B5EB05C222ADFD83006219E2 /* ZJSecondView.swift */,
 				B5EB05C322ADFD83006219E2 /* ZJSecondCell.swift */,
 			);
 			path = View;
@@ -328,6 +330,7 @@
 		B5EB05CF22ADFDCE006219E2 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				B524003122AFA2EA001ADA25 /* ZJSecondViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -548,14 +551,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B524003422AFA428001ADA25 /* ZJBaseTableViewController.swift in Sources */,
 				B5EB05E222AE66A9006219E2 /* ZJAdaptUtil.swift in Sources */,
 				B524662022896C3300A8C362 /* ViewController.swift in Sources */,
+				B524003222AFA2EA001ADA25 /* ZJSecondViewModel.swift in Sources */,
 				B5EB05CB22ADFD84006219E2 /* ZJSecondCell.swift in Sources */,
 				B5246672228AABC500A8C362 /* ZJBaseTabBarContentView.swift in Sources */,
 				B5EB05C622ADFD83006219E2 /* ZJFindController.swift in Sources */,
 				B5246675228AABC500A8C362 /* ZJNavigationController.swift in Sources */,
 				B5EB05CD22ADFD84006219E2 /* ZJFavorController.swift in Sources */,
-				B5EB05CA22ADFD84006219E2 /* ZJSecondView.swift in Sources */,
 				B5EB05BA22ADF666006219E2 /* ZJAppHelper.swift in Sources */,
 				B5EB05CC22ADFD84006219E2 /* ZJSecondController.swift in Sources */,
 				B551062B22A7B96E00EC723B /* ZJBaseTableViewCell.swift in Sources */,
