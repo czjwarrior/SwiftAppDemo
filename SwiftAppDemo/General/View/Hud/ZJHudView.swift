@@ -18,14 +18,12 @@ class ZJHudView: MBProgressHUD {
     init(view: UIView, type: ZJHudType, message: String, animated: Bool = true) {
         super.init(view: view)
         
-        self.bezelView.backgroundColor = .clear
+        self.color = .clear
         self.mode = .customView
         self.removeFromSuperViewOnHide = true
         
         let customView = ZJHudCustomView(type: type, message: message)
         self.customView = customView
-        
-        print("sdasd")
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -39,13 +37,14 @@ class ZJHudView: MBProgressHUD {
         if hudType == .loading {
             hudView.animationType = .fade
             
-            hudView.show(animated: animated)
+            hudView.show(animated)
             
         } else {
             hudView.animationType = .zoomIn
             
-            hudView.show(animated: animated)
-            hudView.hide(animated: animated, afterDelay: 2.0)
+            hudView.show(animated)
+            
+            hudView.hide(animated, afterDelay: 1.0)
         }
         view.addSubview(hudView)
         

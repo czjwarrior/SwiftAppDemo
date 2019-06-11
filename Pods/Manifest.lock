@@ -1,7 +1,7 @@
 PODS:
   - ESTabBarController-swift (2.7)
   - EZSwiftExtensions (2.0)
-  - MBProgressHUD (1.1.0)
+  - MBProgressHUD (0.9.2)
   - "NSObject+Rx (5.0.0)":
     - RxSwift (~> 5.0)
   - PKHUD (5.2.1)
@@ -17,7 +17,7 @@ PODS:
 DEPENDENCIES:
   - ESTabBarController-swift
   - EZSwiftExtensions
-  - MBProgressHUD (~> 1.1.0)
+  - MBProgressHUD (~> 0.9)
   - "NSObject+Rx"
   - PKHUD (~> 5.0)
   - RxCocoa (~> 5)
@@ -41,7 +41,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   ESTabBarController-swift: 4fb52ad03d94d0717ef97bc9eb09a5abfdded0a2
   EZSwiftExtensions: f73648a591e529a1dbd83c22b19fd3e57df6fb7d
-  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   "NSObject+Rx": 6151a97d171f7187c4183746acc42d9451952a7b
   PKHUD: 4e6162c4c39ac367c6934e9855c6b4762ee16256
   RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
@@ -50,6 +50,6 @@ SPEC CHECKSUMS:
   SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
   Toast-Swift: 36f4720243c8582c2be243a60a51e193c761f541
 
-PODFILE CHECKSUM: c5ced48175650019e2c7a2d07ec1e175788fdd45
+PODFILE CHECKSUM: 26774a9265d72f8f735d5167e6ccff2d8c92b9a1
 
 COCOAPODS: 1.7.1

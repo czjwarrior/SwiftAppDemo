@@ -43,10 +43,29 @@ class ZJHudCustomView: UIView {
     }()
     
     lazy var titleLabel: UILabel = {
-        let label = UILabel(font: UIFont.systemFont(ofSize: 12),
+        let label = UILabel(font: UIFont.systemFont(ofSize: 13~),
                             color: .white,
                             alignment: .left)
+        label.text = self.message
         return label
+    }()
+    
+    lazy var loadingImageView: UIImageView = {
+        let imageView = UIImageView(image: UIImage(named: "hud_loading"))
+        
+        imageView.layer.removeAllAnimations()
+        let ca = CABasicAnimation()
+        ca.keyPath = "transform.rotation.z"
+        ca.fromValue = NSNumber(value: 0.0)
+        ca.toValue = NSNumber(value: Float.pi * 2)
+        ca.autoreverses = false
+        ca.repeatCount = MAXFLOAT
+        ca.duration = 0.8
+        ca.isRemovedOnCompletion = false
+        
+        imageView.layer.add(ca, forKey: "z")
+        
+        return imageView
     }()
 
     required init?(coder aDecoder: NSCoder) {
@@ -56,24 +75,35 @@ class ZJHudCustomView: UIView {
 
 extension ZJHudCustomView {
     func createUI() {
-        self.addSubview(self.bgImageView)
-        self.bgImageView.addSubview(self.typeImageView)
-        self.bgImageView.addSubview(self.titleLabel)
         
-        self.typeImageView.snp.makeConstraints { (make) in
-            make.size.equalTo(CGSize(width: 25, height: 25)~)
-            make.left.equalTo(15~)
-            make.centerY.equalToSuperview()
-        }
-        
-        self.titleLabel.snp.makeConstraints { (make) in
-            make.left.equalTo(self.typeImageView.snp.left).offset(12~)
-            make.centerY.equalToSuperview()
-            make.right.equalToSuperview().offset(15~)
-        }
-        
-        self.bgImageView.snp.makeConstraints { (make) in
-            make.center.equalToSuperview()
+        if self.hudType == .loading {
+            self.addSubview(self.loadingImageView)
+            
+            self.loadingImageView.snp.makeConstraints { (make) in
+                make.size.equalTo(CGSize(width: 45, height: 45)~)
+                make.center.equalToSuperview()
+            }
+            
+        } else {
+            self.addSubview(self.bgImageView)
+            self.bgImageView.addSubview(self.typeImageView)
+            self.bgImageView.addSubview(self.titleLabel)
+            
+            self.typeImageView.snp.makeConstraints { (make) in
+                make.size.equalTo(CGSize(width: 25, height: 25)~)
+                make.left.equalToSuperview().offset(15~)
+                make.centerY.equalToSuperview()
+            }
+            
+            self.titleLabel.snp.makeConstraints { (make) in
+                make.left.equalTo(self.typeImageView.snp.right).offset(12~)
+                make.right.equalToSuperview().offset(-15~)
+                make.centerY.equalTo(self.typeImageView.snp.centerY)
+            }
+            
+            self.bgImageView.snp.makeConstraints { (make) in
+                make.center.equalToSuperview()
+            }
         }
     }
     

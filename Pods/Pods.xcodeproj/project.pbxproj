@@ -14,8 +14,10 @@
 		012C310EB8E4830634610AC2C04ABB05 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F43199BA350FE2A96AC626B3701880 /* Optional.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		0186D124E96490597AFA841B2386B7E0 /* RxCocoaObjCRuntimeError+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E13DD00BA9560357F7324E069823721 /* RxCocoaObjCRuntimeError+Extensions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		01F145C241529CAA72D3D2034C337679 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0015325755FBAB991ACF75478041B64 /* Window.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		01F9BC7DF1F30099531F40144251FF36 /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C37FFC88A7EA03C60DA50C49595CC43 /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		02478FA0DDDF5010249D994A7A0AA3F8 /* RxCollectionViewDataSourcePrefetchingProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAE216D1C733FEA5E00D55375E0DFD7 /* RxCollectionViewDataSourcePrefetchingProxy.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		02B52FCFD66EE552E7944A7049377A8D /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C8E0C5B6DC42122A0FD0578D78FEBB /* LayoutConstraint.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		032688A5DBA664C29B3BAF65EF6049C7 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E43E03244B1C4FB1A39C5E1477250AF /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		032F15FA1771A80E3FAE138F52870853 /* RxTableViewDataSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC9C8247FF696DCEDA34348622C7E2 /* RxTableViewDataSourceType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		03AE5862665617B420671625786FF616 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDBCA54B9E8133FFBADB775067B8B65F /* Foundation.framework */; };
 		03B917A0FD761367B9A7DDEF41FF80D8 /* UIDeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843AA694C51FB15872A76B438CCF1A63 /* UIDeviceExtensions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -59,7 +61,6 @@
 		17567F499BECDF2975756FCD367501D4 /* Completable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE321F8FA2ED8DED46D8CD57F04EDC0 /* Completable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		189186DF610E991220873402988F16F0 /* SynchronizedDisposeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C7216D57190FFD9F76F91C4B160141 /* SynchronizedDisposeType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		18E23DC42B4E4ED6AE111D8C4364ADA2 /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669CE825609C2D9DF68EC458B64AD2A7 /* Deprecated.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		1BA30CAFE0BE7866FC0D9B887EF65F59 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A47676F370E0D548F97434CFD5E4C498 /* QuartzCore.framework */; };
 		1C5FB6EE496D35E62283A87EDE868264 /* UIStoryboardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353E1859DAEC75CD83613F6C50DD941A /* UIStoryboardExtensions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		1CC5617431AF8EA675D387B99710B657 /* AtomicInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF536457D0A8E025F78EDF0DA75157A /* AtomicInt.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		1D883177A0FD2784B6C28BC4DDA80B7C /* NSTextView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21B79A29165E33A86D2C18B249FACDE /* NSTextView+Rx.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -121,6 +122,7 @@
 		3DA4E5A1E7B2AD9BE63CDAC186BB36A7 /* AsyncLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A6ED34AB775C8C64157414D508239F /* AsyncLock.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3F861AE8FB6BAA76B9A2B5DB54E3A69A /* ESTabBarController-swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D93525C9258085902585B1912EB424D4 /* ESTabBarController-swift-dummy.m */; };
 		40C35F4631717CBE98725CD456A3E20E /* UIView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5711855A84D107CF2E699F084D09390 /* UIView+Rx.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4122A46454DE6C8CE28CFED14B2546AF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3279758B3A3F12E77F3834B31270B1D5 /* CoreGraphics.framework */; };
 		4159438A504E93A5137538C7706EDA05 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1359FB35B5D3CAB25E07CEB6323D30BF /* Filter.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		41E988E78D43756AB50A0A278D35E80B /* Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F8D9CEEEC2504D3AB26BD83DA62D20 /* Merge.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		41EFCE045D65B991A732F720F427AB4C /* UIStepper+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7668FF4E8E8DD6399E3913329217DD0B /* UIStepper+Rx.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -135,6 +137,7 @@
 		48ADB1D838CEBD15C1D1CD38483046A4 /* NSLayoutConstraint+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E1380E6D9D5F015CB13CC85192109D /* NSLayoutConstraint+Rx.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		48C93F0E4964FC127AED1F244BC3F441 /* RxSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3EF4DCC59D1A3B51FAD8E356D48A69 /* RxSwift-dummy.m */; };
 		48E2B84136157013A3E7EB41E40027ED /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08665456E43E07ADD560847B4354D54C /* UIViewExtensions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		49B19287856553BB060CAF6A15AA581A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDBCA54B9E8133FFBADB775067B8B65F /* Foundation.framework */; };
 		4A518B07303F24DA77B98BD14C1F8B9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDBCA54B9E8133FFBADB775067B8B65F /* Foundation.framework */; };
 		4B583F2D1032C500690625994CAEBC6C /* UISearchBar+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2136C04D757647AAE26266D94590BC8 /* UISearchBar+Rx.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4B91957674D3E8C83B9FA6CB8F9AF8FB /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AE70930BA5939CE07019C0BA24C772 /* UIImageExtensions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -190,7 +193,6 @@
 		686FF7C913C01DA73AC61121432D9179 /* SchedulerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A924212CBC45373CDE8FC75C0D3AA319 /* SchedulerType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		68E9DA1C96313B3140A4E9856B2B9C33 /* Sink.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB478A40A21A6DE3427933D7FCD79423 /* Sink.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		6A4BE0185960727C805E6547EE0C6A5D /* CombineLatest+Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD6168481D7ED31C5EEE6A2BAB3951F /* CombineLatest+Collection.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		6BA2D8497A5FD018AB95972AEB6C40B5 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E43E03244B1C4FB1A39C5E1477250AF /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D9C258B8CB870B8C8E5FBDAB0142237 /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30F25EA3CC2FFBC84CC72A222D94F0 /* UserDefaultsExtension.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		6DFDE0421B980C95FE313869F36937A8 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43B1931AA9D5D72C31261BE84249232 /* ConstraintInsetTarget.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		6E28ECEB5115E6A7BC13FB48FBA27F00 /* PrimitiveSequence+Zip+arity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F249DCDA75F7749174375476DC17A0 /* PrimitiveSequence+Zip+arity.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -218,7 +220,6 @@
 		7AB9C2A424BDFB21E5D8BD56C212D97C /* RxTextStorageDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479E561A66D6E9F16B83554BD9FD6AA9 /* RxTextStorageDelegateProxy.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		7B23A5D8B707B4301341C75D33584532 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ECF198DCEAB4AF9515B6C5F946D7F8 /* ConstraintMaker.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		7B35BDFABD1A44BA7663911D5ACE273F /* UINavigationItem+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663CF0FD34BBF52C685904EE7D87B3D9 /* UINavigationItem+Rx.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		7B8C25614B945981C5C9E838F22C94B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDBCA54B9E8133FFBADB775067B8B65F /* Foundation.framework */; };
 		7BE8F5531C073248FCEB81176B5487C0 /* UIAlertAction+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970C12410EB28BBEE9CCE5D36A209AB8 /* UIAlertAction+Rx.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		7D7281DDFCF3B950A364089C8962C016 /* ControlProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793A75CD03D0A3A39D0B07F90D14DC39 /* ControlProperty.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		7DB19090096810FA9920401A669BBB34 /* Catch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02DB92A65B69B00E3A5426A9FB789AD /* Catch.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -275,16 +276,13 @@
 		A15DAE0C54F73DE06B5F2CB6FC290540 /* VirtualTimeConverterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471D7E0F231F55704FF8690526C9C5F1 /* VirtualTimeConverterType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A180BEB4E7B5AA0F401DF8D9EA8918DF /* RxPickerViewDataSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99855A15A1BFD8B599E452DF41F9C418 /* RxPickerViewDataSourceType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A1892243288663530615708D219C0C08 /* CGRectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB28E427208EC393CABFEFDBAC74E5C /* CGRectExtensions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		A1AD7E5FA1F00D383F735BAAF6CB4AD4 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2D0E70631D81A02846DEC1D083272F /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A1B70C837F93C11BF44C454CBB849717 /* BundleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE19FE64766718F5395C4F9276844B9 /* BundleExtensions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		A25B00810B70F230A6EF0694BA9D70A3 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0B605BA8E9DEC77EA6E6C58910FD64 /* MBProgressHUD-dummy.m */; };
 		A29E562A22B0FD42AF117FA913D22709 /* Do.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E3F6E543BCA120FBC2CA668671D017 /* Do.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A3C6672BEA412A56854C0F6F073155D0 /* Platform.Darwin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BFE9857FFFF6B70C917F248EFA93F0 /* Platform.Darwin.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A43B43DE4330E1C0CC2536D6E7AF4865 /* CurrentThreadScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDE497409CD599A27941FC451E69E5D /* CurrentThreadScheduler.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A49020135E3419E103B83F46FF6E7119 /* RxRelay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 509198563837AD69CA6EB9C5261073A8 /* RxRelay-dummy.m */; };
 		A661149947AB6EFAB194AA284A30C7C7 /* RxSearchControllerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C16A9443D60D602D228633B06C59FC /* RxSearchControllerDelegateProxy.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A699491732DDAE1B0338F1D1BB2BD556 /* CombineLatest+arity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6763418203CAF4E61835BA60FD93C167 /* CombineLatest+arity.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		A8B2C7D088392803671B712C8DAF406E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3279758B3A3F12E77F3834B31270B1D5 /* CoreGraphics.framework */; };
 		A9221EC8000C0565A670EB5A46C9B57A /* UILabel+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC7F9B40E9382962DFE525A4270CCE6 /* UILabel+Rx.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A949C0DA884F143C22937FB78CB4A27B /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042365240EE42AEB35D0BE7E88109F3 /* ArrayExtensions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A96BFBA468B72F6FAD35C6738A66183E /* RecursiveLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C39DD5828FB8946726834688A36B9E2 /* RecursiveLock.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -298,6 +296,7 @@
 		ADEBC0C696B5C4D466A5335E4004011D /* BinaryDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB88E5A296B8C57CD4E4147B1A9882A5 /* BinaryDisposable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		AF0FACDCFA1570A19B663EF761E1F01C /* UIScrollView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04E3D353EAA7E9DCC13EF06EBE9596C /* UIScrollView+Rx.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		AF9158A2312A9C76B4DADEC90A3DC0B5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A47676F370E0D548F97434CFD5E4C498 /* QuartzCore.framework */; };
+		B084DD39BAA2B044595CEA061216B108 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2D0E70631D81A02846DEC1D083272F /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B12E48CCA87855E77499C966F9A1F0CE /* BlockPan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE8795C5590B899926CD027C0A0C6E7 /* BlockPan.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B17087B94BB8F1E44FD9163C2111E7F2 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DBC3A1D06A49C84617CF79A0B3A258 /* ConstraintItem.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B189B5FEB2136EE6C3EE28A2FE5B1BFB /* Skip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16668B13E4CA23AA719022824E6A529F /* Skip.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -424,6 +423,7 @@
 		F545876C25C492792E83E3A3E7E0B241 /* ShareReplayScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4CB9ACCD0D0DA8E7C91D6A135B0F3D /* ShareReplayScope.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F65466644CF57E605BFF20F6B2882DC5 /* SchedulerType+SharedSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B16170379551B24D98BD3987AC8014F /* SchedulerType+SharedSequence.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F6C89E47CC8C4CE8D9AAB6E455852645 /* Completable+AndThen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84811083953330DC7B5D2B8D8EB2E670 /* Completable+AndThen.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F7CFA28B271614962265B9A5AB862C5B /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0B605BA8E9DEC77EA6E6C58910FD64 /* MBProgressHUD-dummy.m */; };
 		F7FE1CB0E67BE486BD089AF31EF23C1E /* UIActivityIndicatorView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB46608A87DDE5D23643901898395D9 /* UIActivityIndicatorView+Rx.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F821692869123237CE794DCE529900D7 /* UIFontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D82B396BAEF2ADE63FC0FD5E4877459 /* UIFontExtensions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F8E265F2CCFF371B87E42D74CAB10C34 /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E994FA94ECB2B403A6DA1BE85026B2F /* Switch.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -433,7 +433,6 @@
 		FA4E153A6DDC31175F9533922DDB0539 /* DispatchQueue+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADF8D76CDF44E2C979BE3111082E4EB /* DispatchQueue+Extensions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		FA7001992C74D7EB9464F26265C98FBD /* SynchronizedUnsubscribeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FA6BAA011BAD316F5A5E6C75F65D1A /* SynchronizedUnsubscribeType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		FB34B0DBC4FEB42D7AD439A58F0FAE5D /* NSImageView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394451B3CD5DD46B53AA9394F6A9BC66 /* NSImageView+Rx.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		FD46A422A60DC7E540AEC3CE2C020DB0 /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C37FFC88A7EA03C60DA50C49595CC43 /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FDF32BC43834F7B07179AB620DDB74E7 /* Take.swift in Sources */ = {isa = PBXBuildFile; fileRef = A104D5E9A952E1787035EB44AFD2EE1B /* Take.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		FE146DEA1C3975B4FFDFCA1259C9F7FE /* PKHUDSquareBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424D2DFE5FB2EC951BA563B4A789759 /* PKHUDSquareBaseView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		FE15E2E039A2D01A1141BE51FA8C242F /* PublishRelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF0903AA66ABBC2A814FFB2904FD290 /* PublishRelay.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -1104,6 +1103,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D6504D19ABC02340A3A7AABAE38A6848 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4122A46454DE6C8CE28CFED14B2546AF /* CoreGraphics.framework in Frameworks */,
+				49B19287856553BB060CAF6A15AA581A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DB3BD0B325DD4214146DC9C998921F86 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1127,16 +1135,6 @@
 				D6BB4D6536362E9E26B74172FCFF9F4B /* Foundation.framework in Frameworks */,
 				79E591B2BEE710FE964E64C93465070B /* RxRelay.framework in Frameworks */,
 				DE9AEB92683C931103A32E4F237A70D4 /* RxSwift.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F38FCF49BC46EF5ECC7EDB9626C56A0E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A8B2C7D088392803671B712C8DAF406E /* CoreGraphics.framework in Frameworks */,
-				7B8C25614B945981C5C9E838F22C94B2 /* Foundation.framework in Frameworks */,
-				1BA30CAFE0BE7866FC0D9B887EF65F59 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1886,6 +1884,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		10608F7BD707C8831AE59D8BF4528839 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01F9BC7DF1F30099531F40144251FF36 /* MBProgressHUD-umbrella.h in Headers */,
+				032688A5DBA664C29B3BAF65EF6049C7 /* MBProgressHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		21B1E92A491B37563661C596D581C4CD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1923,15 +1930,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				03D1D378B790331FE840BDA0234449AC /* Toast-Swift-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5A4C294738970F47E09E01B7901BA72D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FD46A422A60DC7E540AEC3CE2C020DB0 /* MBProgressHUD-umbrella.h in Headers */,
-				6BA2D8497A5FD018AB95972AEB6C40B5 /* MBProgressHUD.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2064,12 +2062,12 @@
 		};
 		82B0A41D3031FF27D78E17B0A9A46FB0 /* MBProgressHUD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B987638F9099098B9389DF186A2278A4 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */;
+			buildConfigurationList = 5644A4E6E8B2B52298025C6020210E65 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */;
 			buildPhases = (
-				5A4C294738970F47E09E01B7901BA72D /* Headers */,
-				7D10479B1384C38A9E3DA1CEBAAA9AC0 /* Sources */,
-				F38FCF49BC46EF5ECC7EDB9626C56A0E /* Frameworks */,
-				03E62E81F66919E63ECA0D21628A8F9B /* Resources */,
+				10608F7BD707C8831AE59D8BF4528839 /* Headers */,
+				8AAEF8DA8767A1A1FED2868EEC104EE3 /* Sources */,
+				D6504D19ABC02340A3A7AABAE38A6848 /* Frameworks */,
+				89BBE1FAA408A49C50AEB7823AB3F787 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -2236,13 +2234,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		03E62E81F66919E63ECA0D21628A8F9B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0BE06200C6B667A325862B3097467860 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2276,6 +2267,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A3C8AFEFF557455E731EE8E116CC5B4 /* PKHUDResources.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89BBE1FAA408A49C50AEB7823AB3F787 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2348,21 +2346,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D10479B1384C38A9E3DA1CEBAAA9AC0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A25B00810B70F230A6EF0694BA9D70A3 /* MBProgressHUD-dummy.m in Sources */,
-				A1AD7E5FA1F00D383F735BAAF6CB4AD4 /* MBProgressHUD.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		851AAE56CE9FD9CEC1B2796F99A55F25 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2E4E45CC12FE1BD7CE924A0DBB0D45AB /* Toast-Swift-dummy.m in Sources */,
 				37F25ADE006146C456269CAF480C4B06 /* Toast.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AAEF8DA8767A1A1FED2868EEC104EE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7CFA28B271614962265B9A5AB862C5B /* MBProgressHUD-dummy.m in Sources */,
+				B084DD39BAA2B044595CEA061216B108 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2901,42 +2899,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0893B741A7DC925C3273CF71ECD2BB88 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA53EB985BF49BAF5405E5C4DDD77408 /* MBProgressHUD.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
-				PRODUCT_MODULE_NAME = MBProgressHUD;
-				PRODUCT_NAME = MBProgressHUD;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		16F876752282A02EB246CC147A26FE35 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F66520288B630E337E70101F9E452599 /* EZSwiftExtensions.xcconfig */;
@@ -3217,6 +3179,42 @@
 			};
 			name = Release;
 		};
+		5211F18B253382BDE2014D01C3711DE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA53EB985BF49BAF5405E5C4DDD77408 /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = MBProgressHUD;
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		650CDD23EDE9C4AFDD3B6BAE7A2874CC /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0FBA63F05161A9B1E7BF87EF903DA765 /* PKHUD.xcconfig */;
@@ -3344,41 +3342,6 @@
 				MODULEMAP_FILE = "Target Support Files/RxRelay/RxRelay.modulemap";
 				PRODUCT_MODULE_NAME = RxRelay;
 				PRODUCT_NAME = RxRelay;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8CF1E794E12FF9CBE8BAADBEF9A35EA4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA53EB985BF49BAF5405E5C4DDD77408 /* MBProgressHUD.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
-				PRODUCT_MODULE_NAME = MBProgressHUD;
-				PRODUCT_NAME = MBProgressHUD;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -3588,6 +3551,41 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CB13BDA13FF621DA819C3B4929588F18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA53EB985BF49BAF5405E5C4DDD77408 /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = MBProgressHUD;
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -3885,6 +3883,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		5644A4E6E8B2B52298025C6020210E65 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB13BDA13FF621DA819C3B4929588F18 /* Debug */,
+				5211F18B253382BDE2014D01C3711DE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6B295CB7FAD619AD0BB7414E6ABF8675 /* Build configuration list for PBXNativeTarget "RxRelay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -3935,15 +3942,6 @@
 			buildConfigurations = (
 				75927A4FBA3DCAD542356F7877C0FF9B /* Debug */,
 				40CC701934023652271984A1922263E7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B987638F9099098B9389DF186A2278A4 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8CF1E794E12FF9CBE8BAADBEF9A35EA4 /* Debug */,
-				0893B741A7DC925C3273CF71ECD2BB88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
