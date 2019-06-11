@@ -49,6 +49,6 @@ extension ZJSecondView: ZJBaseTableDataSourceProrocol {
 //        ZJ_TopVc().pushVC(ZJThirdController())
 //        self.makeToast("哈哈！！！")
         
-        ZJHudView.zjShowHud(hudType: .loading, message: "哈哈lalal")
+        ZJHudView.zjShowHud(hudType: .success, message: "哈哈lalal")
     }
 }

@@ -260,6 +260,7 @@
 		B524667D228AB2D900A8C362 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				B5EB05E322AF4FEB006219E2 /* NetWork */,
 				B5EB05D822AE3A77006219E2 /* View */,
 				B5EB05D522AE3A5D006219E2 /* Extentions */,
 			);
@@ -363,6 +364,13 @@
 				B5EB05DC22AE3AE1006219E2 /* ZJHudCustomView.swift */,
 			);
 			path = Hud;
+			sourceTree = "<group>";
+		};
+		B5EB05E322AF4FEB006219E2 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetWork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

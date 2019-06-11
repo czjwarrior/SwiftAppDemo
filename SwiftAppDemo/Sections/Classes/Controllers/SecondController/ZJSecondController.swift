@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import NSObject_Rx
 
 class ZJSecondController: ZJBaseLayoutController {
 
