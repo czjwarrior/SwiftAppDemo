@@ -16,6 +16,8 @@ enum ZJBaseViewRegion {
 }
 
 class ZJBaseControllerView: UIView {
+    
+    var isNavHidden = false
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -107,6 +109,41 @@ class ZJBaseControllerView: UIView {
             return self.navView
         case .content:
             return self.contentView
+        }
+    }
+    
+    func setNavBarHidden(hidden: Bool, animation: Bool) {
+        self .setNavAndStatusHidden(navBar: hidden, statusBar: false, animation: animation)
+    }
+    
+    func setNavAndStatusHidden(navBar hiddenNavBar: Bool, statusBar hiddenStatusBar: Bool, animation: Bool) {
+        self.statusBarView.isHidden = hiddenStatusBar
+        
+        isNavHidden = hiddenNavBar
+        if animation {
+            UIView.animate(withDuration: 0.3) {
+                self.layoutSubviews()
+            }
+        } else {
+            self.layoutSubviews()
+        }
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        let statusBarHidden = self.statusBarView.isHidden
+        
+        for view in self.navView.subviews {
+            view.alpha = isNavHidden ? 0.0 : 1.0
+        }
+        
+        if isNavHidden {
+            self.navView.frame = CGRect(x: 0, y: kStatusBarHeight * ((!statusBarHidden).toInt).toCGFloat - kNaviHeight, w: self.view_width, h: kNaviHeight)
+            self.contentView.frame = CGRect(x: 0, y: self.navView.frame.maxY, w: self.view_width, h: self.view_height - self.navView.frame.maxY)
+        } else {
+            self.navView.frame = CGRect(x: 0, y: 0, w: self.view_width, h: kNaviHeight)
+            self.contentView.frame = CGRect(x: 0, y: self.navView.frame.maxY, w: self.view_width, h: self.view_height - self.navView.frame.maxY)
         }
     }
 }
