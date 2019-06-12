@@ -113,7 +113,7 @@ class ZJBaseControllerView: UIView {
     }
     
     func setNavBarHidden(hidden: Bool, animation: Bool) {
-        self .setNavAndStatusHidden(navBar: hidden, statusBar: false, animation: animation)
+        self.setNavAndStatusHidden(navBar: hidden, statusBar: false, animation: animation)
     }
     
     func setNavAndStatusHidden(navBar hiddenNavBar: Bool, statusBar hiddenStatusBar: Bool, animation: Bool) {

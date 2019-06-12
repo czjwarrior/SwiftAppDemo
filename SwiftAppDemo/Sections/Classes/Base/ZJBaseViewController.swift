@@ -28,7 +28,7 @@ class ZJBaseViewController: UIViewController {
     }
     
     deinit {
-        print("释放了。。。")
+        print("release。。。")
     }
     
     // 处理重复点击tabBar事件 <前提：该ZJBaseViewController为根视图>

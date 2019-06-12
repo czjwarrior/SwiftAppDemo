@@ -20,6 +20,8 @@ class ZJBaseTableViewController: ZJBaseLayoutController {
         self.tableViewDelegate = self as? ZJBaseTableDataSourceProrocol
         
         self.addToContentView(self.mTableView)
+        
+        
     }
     
     lazy var mTableView: UITableView = {
