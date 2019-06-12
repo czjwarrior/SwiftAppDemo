@@ -5,6 +5,7 @@ PODS:
   - EZSwiftExtensions (2.0)
   - HandyJSON (5.0.0)
   - MBProgressHUD (0.9.2)
+  - MJRefresh (3.2.0)
   - Moya/Core (13.0.1):
     - Alamofire (~> 4.1)
     - Result (~> 4.1)
@@ -27,6 +28,7 @@ DEPENDENCIES:
   - EZSwiftExtensions
   - HandyJSON (~> 5.0.0)
   - MBProgressHUD (~> 0.9)
+  - MJRefresh
   - Moya/RxSwift (~> 13.0)
   - "NSObject+Rx"
   - PKHUD (~> 5.0)
@@ -42,6 +44,7 @@ SPEC REPOS:
     - EZSwiftExtensions
     - HandyJSON
     - MBProgressHUD
+    - MJRefresh
     - Moya
     - "NSObject+Rx"
     - PKHUD
@@ -58,6 +61,7 @@ SPEC CHECKSUMS:
   EZSwiftExtensions: f73648a591e529a1dbd83c22b19fd3e57df6fb7d
   HandyJSON: 992f2d661716d6a91de82d0056927bc7813b5770
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
   "NSObject+Rx": 9884a92f19b610795c431e10b4e601913b59c9e9
   PKHUD: 4e6162c4c39ac367c6934e9855c6b4762ee16256
@@ -67,6 +71,6 @@ SPEC CHECKSUMS:
   SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
   Toast-Swift: 36f4720243c8582c2be243a60a51e193c761f541
 
-PODFILE CHECKSUM: 6abc90792e43d160ea44ee38f88e0bf70c8a3693
+PODFILE CHECKSUM: c3c160b88da4f198291bd961c122f4d1b845b410
 
 COCOAPODS: 1.7.1
