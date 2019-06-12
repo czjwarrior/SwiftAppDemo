@@ -16,7 +16,7 @@ let kScreenWidth                     = UIScreen.main.bounds.width
 let kScreenHeight                    = UIScreen.main.bounds.height
 
 /// 状态栏高度
-let kStatusBarHeight: CGFloat        = UIApplication.shared.statusBarFrame.size.height
+let kStatusBarHeight: CGFloat        = kIsIPhoneX ? 44 : 20
 
 // TODO: 是否是iphoneX ，需要支持xs，plus
 let kIsIPhoneX: Bool                 = kScreenHeight >= 812 ? true : false
