@@ -19,5 +19,6 @@ pod 'HandyJSON', '~> 5.0.0'
 pod 'DZNEmptyDataSet', '~> 1.8.1'
 pod 'MJRefresh'
 pod 'SwiftyJSON', '~> 4.2.0'
+pod 'RxGesture'
 
 end

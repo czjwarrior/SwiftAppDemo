@@ -15,12 +15,16 @@ import EZSwiftExtensions
 
 class ZJNetWorkManager: NSObject {
     
-    let provider = MoyaProvider<ZJSwiftApi>()
+    static let provider = MoyaProvider<ZJSwiftApi>()
     
-    func testDemoApi() -> Observable<ZJBaseModel> {
+    static func testDemoApi() -> Observable<ZJBaseModel> {
         
-        return provider.rx.request(.testApi).map(dataModel: ZJBaseModel.self)
-        
+        return
+            provider
+                .rx
+                .request(.testApi)
+                .map(dataModel: ZJStatusModel.self)
+                .asObservable()
     }
     
 }

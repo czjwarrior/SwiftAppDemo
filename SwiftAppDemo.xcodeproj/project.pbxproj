@@ -38,6 +38,13 @@
 		B5D12B6722B1E64600B1C498 /* ZJPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D12B6622B1E64600B1C498 /* ZJPageModel.swift */; };
 		B5D12B6922B1E65C00B1C498 /* ZJStatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D12B6822B1E65C00B1C498 /* ZJStatusModel.swift */; };
 		B5D12B6B22B1E73700B1C498 /* ZJEmptyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D12B6A22B1E73700B1C498 /* ZJEmptyModel.swift */; };
+		B5D12B7022B1FC7700B1C498 /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D12B6D22B1FC7700B1C498 /* ErrorTracker.swift */; };
+		B5D12B7122B1FC7700B1C498 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D12B6F22B1FC7700B1C498 /* ActivityIndicator.swift */; };
+		B5D12B7322B1FCC900B1C498 /* ZJBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D12B7222B1FCC900B1C498 /* ZJBaseViewModel.swift */; };
+		B5D12B7722B22C6C00B1C498 /* ZJRefreshHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D12B7622B22C6C00B1C498 /* ZJRefreshHeader.swift */; };
+		B5D12B7922B22CB300B1C498 /* ZJRefreshFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D12B7822B22CB300B1C498 /* ZJRefreshFooter.swift */; };
+		B5D12B7E22B2306C00B1C498 /* Observable+Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D12B7C22B2306C00B1C498 /* Observable+Logging.swift */; };
+		B5D12B7F22B2306C00B1C498 /* Observable+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D12B7D22B2306C00B1C498 /* Observable+Operators.swift */; };
 		B5EB05C622ADFD83006219E2 /* ZJFindController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB05BC22ADFD83006219E2 /* ZJFindController.swift */; };
 		B5EB05C722ADFD83006219E2 /* ZJMineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB05BD22ADFD83006219E2 /* ZJMineController.swift */; };
 		B5EB05C822ADFD84006219E2 /* ZJHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB05BE22ADFD83006219E2 /* ZJHomeController.swift */; };
@@ -106,6 +113,13 @@
 		B5D12B6622B1E64600B1C498 /* ZJPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJPageModel.swift; sourceTree = "<group>"; };
 		B5D12B6822B1E65C00B1C498 /* ZJStatusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJStatusModel.swift; sourceTree = "<group>"; };
 		B5D12B6A22B1E73700B1C498 /* ZJEmptyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJEmptyModel.swift; sourceTree = "<group>"; };
+		B5D12B6D22B1FC7700B1C498 /* ErrorTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorTracker.swift; sourceTree = "<group>"; };
+		B5D12B6F22B1FC7700B1C498 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		B5D12B7222B1FCC900B1C498 /* ZJBaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJBaseViewModel.swift; sourceTree = "<group>"; };
+		B5D12B7622B22C6C00B1C498 /* ZJRefreshHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJRefreshHeader.swift; sourceTree = "<group>"; };
+		B5D12B7822B22CB300B1C498 /* ZJRefreshFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJRefreshFooter.swift; sourceTree = "<group>"; };
+		B5D12B7C22B2306C00B1C498 /* Observable+Logging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Logging.swift"; sourceTree = "<group>"; };
+		B5D12B7D22B2306C00B1C498 /* Observable+Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Operators.swift"; sourceTree = "<group>"; };
 		B5EB05BC22ADFD83006219E2 /* ZJFindController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJFindController.swift; sourceTree = "<group>"; };
 		B5EB05BD22ADFD83006219E2 /* ZJMineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJMineController.swift; sourceTree = "<group>"; };
 		B5EB05BE22ADFD83006219E2 /* ZJHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJHomeController.swift; sourceTree = "<group>"; };
@@ -176,6 +190,8 @@
 		B524003922AFCF91001ADA25 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				B5D12B6E22B1FC7700B1C498 /* RxActivityIndicator */,
+				B5D12B6C22B1FC7700B1C498 /* RxErrorTracker */,
 			);
 			path = Vendors;
 			sourceTree = "<group>";
@@ -326,6 +342,7 @@
 		B5D12B4F22B0DA0C00B1C498 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				B5D12B7222B1FCC900B1C498 /* ZJBaseViewModel.swift */,
 				B5D12B5022B0DA0C00B1C498 /* ZJSecondViewModel.swift */,
 			);
 			path = ViewModel;
@@ -399,6 +416,55 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		B5D12B6C22B1FC7700B1C498 /* RxErrorTracker */ = {
+			isa = PBXGroup;
+			children = (
+				B5D12B6D22B1FC7700B1C498 /* ErrorTracker.swift */,
+			);
+			path = RxErrorTracker;
+			sourceTree = "<group>";
+		};
+		B5D12B6E22B1FC7700B1C498 /* RxActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				B5D12B6F22B1FC7700B1C498 /* ActivityIndicator.swift */,
+			);
+			path = RxActivityIndicator;
+			sourceTree = "<group>";
+		};
+		B5D12B7422B21E3900B1C498 /* HeaderRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				B5D12B7622B22C6C00B1C498 /* ZJRefreshHeader.swift */,
+			);
+			path = HeaderRefresh;
+			sourceTree = "<group>";
+		};
+		B5D12B7522B21E3900B1C498 /* FooterRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				B5D12B7822B22CB300B1C498 /* ZJRefreshFooter.swift */,
+			);
+			path = FooterRefresh;
+			sourceTree = "<group>";
+		};
+		B5D12B7A22B2304C00B1C498 /* RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				B5D12B7C22B2306C00B1C498 /* Observable+Logging.swift */,
+				B5D12B7D22B2306C00B1C498 /* Observable+Operators.swift */,
+			);
+			path = RxSwift;
+			sourceTree = "<group>";
+		};
+		B5D12B7B22B2304D00B1C498 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				B5EB05D622AE3A5D006219E2 /* UIView+ZJAdditions.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
 		B5EB05D222AE384E006219E2 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -411,7 +477,8 @@
 		B5EB05D522AE3A5D006219E2 /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
-				B5EB05D622AE3A5D006219E2 /* UIView+ZJAdditions.swift */,
+				B5D12B7A22B2304C00B1C498 /* RxSwift */,
+				B5D12B7B22B2304D00B1C498 /* UIView */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -419,6 +486,8 @@
 		B5EB05D822AE3A77006219E2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B5D12B7522B21E3900B1C498 /* FooterRefresh */,
+				B5D12B7422B21E3900B1C498 /* HeaderRefresh */,
 				B5D12B4422B0D96300B1C498 /* BaseTableView */,
 				B524003622AFAFAC001ADA25 /* Empty */,
 				B5EB05D922AE3A77006219E2 /* Hud */,
@@ -620,9 +689,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5D12B7022B1FC7700B1C498 /* ErrorTracker.swift in Sources */,
 				B5EB05D422AE3862006219E2 /* ZJCommonHeader.swift in Sources */,
+				B5D12B7122B1FC7700B1C498 /* ActivityIndicator.swift in Sources */,
 				B524003822AFAFC1001ADA25 /* ZJEmptyView.swift in Sources */,
+				B5D12B7722B22C6C00B1C498 /* ZJRefreshHeader.swift in Sources */,
 				B524662022896C3300A8C362 /* ViewController.swift in Sources */,
+				B5D12B7E22B2306C00B1C498 /* Observable+Logging.swift in Sources */,
 				B5D12B4C22B0D96300B1C498 /* ZJBaseTableViewCell.swift in Sources */,
 				B5EB05CB22ADFD84006219E2 /* ZJSecondCell.swift in Sources */,
 				B5246672228AABC500A8C362 /* ZJBaseTabBarContentView.swift in Sources */,
@@ -632,8 +705,10 @@
 				B5D12B5D22B118F500B1C498 /* ZJSwiftApi.swift in Sources */,
 				B5246675228AABC500A8C362 /* ZJNavigationController.swift in Sources */,
 				B5EB05CD22ADFD84006219E2 /* ZJFavorController.swift in Sources */,
+				B5D12B7922B22CB300B1C498 /* ZJRefreshFooter.swift in Sources */,
 				B5EB05CC22ADFD84006219E2 /* ZJSecondController.swift in Sources */,
 				B5246673228AABC500A8C362 /* ZJBaseTabBarController.swift in Sources */,
+				B5D12B7F22B2306C00B1C498 /* Observable+Operators.swift in Sources */,
 				B524667C228AAE9700A8C362 /* ZJCommonDefine.swift in Sources */,
 				B5EB05C722ADFD83006219E2 /* ZJMineController.swift in Sources */,
 				B5D12B5F22B11EBA00B1C498 /* ZJNetWorkManager.swift in Sources */,
@@ -649,6 +724,7 @@
 				B5D12B4922B0D96300B1C498 /* ZJBaseTableView.swift in Sources */,
 				B5D12B6722B1E64600B1C498 /* ZJPageModel.swift in Sources */,
 				B5EB05C922ADFD84006219E2 /* ZJThirdController.swift in Sources */,
+				B5D12B7322B1FCC900B1C498 /* ZJBaseViewModel.swift in Sources */,
 				B5D12B6922B1E65C00B1C498 /* ZJStatusModel.swift in Sources */,
 				B5EB05D722AE3A5D006219E2 /* UIView+ZJAdditions.swift in Sources */,
 				B5D12B5122B0DA0C00B1C498 /* ZJSecondViewModel.swift in Sources */,
