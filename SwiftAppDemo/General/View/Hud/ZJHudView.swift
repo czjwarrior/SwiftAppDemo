@@ -51,9 +51,10 @@ class ZJHudView: MBProgressHUD {
         return hudView
     }
     
-    class func zjShowHud(hudType: ZJHudType, message: String = "") {
+    @discardableResult
+    class func zjShowHud(hudType: ZJHudType, message: String = "") -> ZJHudView {
         
         let window = UIApplication.shared.keyWindow
-        self.zjShowHud(view: window!, hudType: hudType, message: message)
+        return self.zjShowHud(view: window!, hudType: hudType, message: message)
     }
 }
