@@ -13,7 +13,7 @@ class ZJRefreshHeader: MJRefreshHeader {
 
     private let imageView: UIImageView = {
         let imageView = UIImageView.init()
-        imageView.image = UIImage.init(named: "pullRefresh")
+        imageView.image = UIImage.init(named: "zj_pull_refresh")
         return imageView
     }()
     

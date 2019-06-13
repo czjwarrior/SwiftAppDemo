@@ -20,5 +20,6 @@ pod 'DZNEmptyDataSet', '~> 1.8.1'
 pod 'MJRefresh'
 pod 'SwiftyJSON', '~> 4.2.0'
 pod 'RxGesture', '~> 2.0'
+pod 'NVActivityIndicatorView', '~> 4.0'
 
 end

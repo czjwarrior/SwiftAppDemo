@@ -10,6 +10,12 @@ import UIKit
 
 class ZJBaseTableViewController: ZJBaseLayoutController {
     
+    let headerRefreshTrigger = PublishSubject<Void>()
+    let footerRefreshTrigger = PublishSubject<Void>()
+    
+    let isHeaderLoading = BehaviorRelay(value: false)
+    let isFooterLoading = BehaviorRelay(value: false)
+    
     weak var tableViewDelegate: ZJBaseTableDataSourceProrocol?
 
     override func viewDidLoad() {
@@ -21,6 +27,24 @@ class ZJBaseTableViewController: ZJBaseLayoutController {
         
         self.addToContentView(self.mTableView)
         
+        self.configRefreshView()
+        
+        _ = ZJRefreshHeader(refreshingBlock: { [weak self] in
+            self?.headerRefreshTrigger.onNext(())
+        })
+        
+        _ = ZJRefreshFooter(refreshingBlock: { [weak self] in
+            self?.footerRefreshTrigger.onNext(())
+        })
+        
+        isHeaderLoading.bind(to: mTableView.mj_header.rx.isAnimating).disposed(by: rx.disposeBag)
+        isFooterLoading.bind(to: mTableView.mj_footer.rx.isAnimating).disposed(by: rx.disposeBag)
+        
+        let updateEmptyDataSet = Observable.of(isLoading.mapToVoid().asObservable()).merge()
+        
+        updateEmptyDataSet.subscribe(onNext: { [weak self] (_) in
+            self?.mTableView.reloadEmptyDataSet()
+        }).disposed(by: rx.disposeBag)
         
     }
     
@@ -46,6 +70,11 @@ class ZJBaseTableViewController: ZJBaseLayoutController {
     
     func reloadData() {
         self.mTableView.reloadData()
+    }
+    
+    func configRefreshView() {
+        mTableView.mj_header = ZJRefreshHeader()
+        mTableView.mj_footer = ZJRefreshFooter()
     }
 
 }

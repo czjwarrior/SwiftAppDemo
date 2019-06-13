@@ -45,6 +45,7 @@
 		B5D12B7922B22CB300B1C498 /* ZJRefreshFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D12B7822B22CB300B1C498 /* ZJRefreshFooter.swift */; };
 		B5D12B7E22B2306C00B1C498 /* Observable+Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D12B7C22B2306C00B1C498 /* Observable+Logging.swift */; };
 		B5D12B7F22B2306C00B1C498 /* Observable+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D12B7D22B2306C00B1C498 /* Observable+Operators.swift */; };
+		B5D12B8122B24E2A00B1C498 /* MJRefresh+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D12B8022B24E2A00B1C498 /* MJRefresh+Rx.swift */; };
 		B5EB05C622ADFD83006219E2 /* ZJFindController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB05BC22ADFD83006219E2 /* ZJFindController.swift */; };
 		B5EB05C722ADFD83006219E2 /* ZJMineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB05BD22ADFD83006219E2 /* ZJMineController.swift */; };
 		B5EB05C822ADFD84006219E2 /* ZJHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB05BE22ADFD83006219E2 /* ZJHomeController.swift */; };
@@ -120,6 +121,7 @@
 		B5D12B7822B22CB300B1C498 /* ZJRefreshFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJRefreshFooter.swift; sourceTree = "<group>"; };
 		B5D12B7C22B2306C00B1C498 /* Observable+Logging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Logging.swift"; sourceTree = "<group>"; };
 		B5D12B7D22B2306C00B1C498 /* Observable+Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Operators.swift"; sourceTree = "<group>"; };
+		B5D12B8022B24E2A00B1C498 /* MJRefresh+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MJRefresh+Rx.swift"; sourceTree = "<group>"; };
 		B5EB05BC22ADFD83006219E2 /* ZJFindController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJFindController.swift; sourceTree = "<group>"; };
 		B5EB05BD22ADFD83006219E2 /* ZJMineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJMineController.swift; sourceTree = "<group>"; };
 		B5EB05BE22ADFD83006219E2 /* ZJHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJHomeController.swift; sourceTree = "<group>"; };
@@ -453,6 +455,7 @@
 			children = (
 				B5D12B7C22B2306C00B1C498 /* Observable+Logging.swift */,
 				B5D12B7D22B2306C00B1C498 /* Observable+Operators.swift */,
+				B5D12B8022B24E2A00B1C498 /* MJRefresh+Rx.swift */,
 			);
 			path = RxSwift;
 			sourceTree = "<group>";
@@ -709,6 +712,7 @@
 				B5EB05CC22ADFD84006219E2 /* ZJSecondController.swift in Sources */,
 				B5246673228AABC500A8C362 /* ZJBaseTabBarController.swift in Sources */,
 				B5D12B7F22B2306C00B1C498 /* Observable+Operators.swift in Sources */,
+				B5D12B8122B24E2A00B1C498 /* MJRefresh+Rx.swift in Sources */,
 				B524667C228AAE9700A8C362 /* ZJCommonDefine.swift in Sources */,
 				B5EB05C722ADFD83006219E2 /* ZJMineController.swift in Sources */,
 				B5D12B5F22B11EBA00B1C498 /* ZJNetWorkManager.swift in Sources */,

@@ -17,7 +17,7 @@ enum ZJSwiftApi {
 extension ZJSwiftApi: TargetType {
     var baseURL: URL {
         
-        return URL(string: "")!
+        return URL(string: "http://www.baidu.com")!
     }
     
     var path: String {
