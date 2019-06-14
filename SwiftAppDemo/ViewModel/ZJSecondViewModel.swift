@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 class ZJSecondViewModel: ZJBaseViewModel, ViewModelType {
     struct Input {
@@ -15,39 +17,50 @@ class ZJSecondViewModel: ZJBaseViewModel, ViewModelType {
     }
     
     struct Output {
-        
+        let items: Variable<[ZJRemainOilModel]>
     }
     
     func transform(input: Input) -> Output {
         
+        let repository = Variable<[ZJRemainOilModel]>([ZJRemainOilModel]())
+        
         input.headerRefresh.flatMapLatest({ [weak self] () -> Observable<[Any]> in
             guard let self = self else { return Observable.just([]) }
-            return self.request()
+            return self
+                .request()
                 .trackActivity(self.headerLoading)
-        })
-            .subscribe(onNext: { (items) in
-                
-            }).disposed(by: rx.disposeBag)
+        }).subscribe(onNext: { (items) in
+            
+            repository.value = items as! [ZJRemainOilModel]
+            
+        }).disposed(by: rx.disposeBag)
         
         input.footerRefresh.flatMapLatest({ [weak self] () -> Observable<[Any]> in
             guard let self = self else { return Observable.just([]) }
-            return self.request()
+            return self
+                .request()
                 .trackActivity(self.footerLoading)
         })
             .subscribe(onNext: { (items) in
                 
+                repository.value += items as! [ZJRemainOilModel]
+                
             }).disposed(by: rx.disposeBag)
         
         
-        return Output()
+        return Output(items: repository)
     }
     
     func request() -> Observable<[Any]> {
         
-        return ZJNetWorkManager.provider.rx.request(.testApi).trackActivity(loading).map { (data) -> [Any] in
-            
-            return [Any]()
-            
-        }.asObservable()
+        return
+            ZJNetWorkManager
+                .testDemoApi()
+                .trackActivity(loading)
+                .map({ (baseModel) -> [ZJRemainOilModel] in
+                    let dataModel = baseModel.data as! [ZJRemainOilModel]
+                    return dataModel
+                    
+            }).asObservable()
     }
 }

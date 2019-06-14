@@ -17,18 +17,18 @@ enum ZJSwiftApi {
 extension ZJSwiftApi: TargetType {
     var baseURL: URL {
         
-        return URL(string: "http://www.baidu.com")!
+        return URL(string: "http://mock.fuyoukache.com/mock/5b7398249692d574dac50126/driver")!
     }
     
     var path: String {
         switch self {
         case .testApi:
-            return ""
+            return "/api/app/oil/getOilSurplusList"
         }
     }
     
     var method: Moya.Method {
-        return .get
+        return .post
     }
     
     var sampleData: Data {

@@ -29,14 +29,6 @@ class ZJBaseTableViewController: ZJBaseLayoutController {
         
         self.configRefreshView()
         
-        _ = ZJRefreshHeader(refreshingBlock: { [weak self] in
-            self?.headerRefreshTrigger.onNext(())
-        })
-        
-        _ = ZJRefreshFooter(refreshingBlock: { [weak self] in
-            self?.footerRefreshTrigger.onNext(())
-        })
-        
         isHeaderLoading.bind(to: mTableView.mj_header.rx.isAnimating).disposed(by: rx.disposeBag)
         isFooterLoading.bind(to: mTableView.mj_footer.rx.isAnimating).disposed(by: rx.disposeBag)
         
@@ -45,6 +37,13 @@ class ZJBaseTableViewController: ZJBaseLayoutController {
         updateEmptyDataSet.subscribe(onNext: { [weak self] (_) in
             self?.mTableView.reloadEmptyDataSet()
         }).disposed(by: rx.disposeBag)
+        
+        if #available(iOS 11.0, *) {
+//            self.mTableView.contentInsetAdjustmentBehavior = .never
+//            self.mTableView.estimatedRowHeight = 0.0
+        } else {
+            // Fallback on earlier versions
+        }
         
     }
     
@@ -73,8 +72,13 @@ class ZJBaseTableViewController: ZJBaseLayoutController {
     }
     
     func configRefreshView() {
-        mTableView.mj_header = ZJRefreshHeader()
-        mTableView.mj_footer = ZJRefreshFooter()
+        mTableView.mj_header = ZJRefreshHeader(refreshingBlock: { [weak self] in
+            self?.headerRefreshTrigger.onNext(())
+        })
+        
+        mTableView.mj_footer = ZJRefreshFooter(refreshingBlock: { [weak self] in
+            self?.footerRefreshTrigger.onNext(())
+        })
     }
 
 }

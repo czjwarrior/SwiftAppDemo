@@ -23,7 +23,7 @@ class ZJNetWorkManager: NSObject {
             provider
                 .rx
                 .request(.testApi)
-                .map(dataModel: ZJStatusModel.self)
+                .map(dataModel: ZJRemainOilModel.self)
                 .asObservable()
     }
     

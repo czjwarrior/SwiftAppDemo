@@ -18,6 +18,10 @@ protocol ViewModelType {
 }
 
 class ZJBaseViewModel: NSObject {
+    
+    var page = 1
+    var pageSize = 20
+    public let hasNextPage = Variable(true)
 
     let loading = ActivityIndicator()
     let headerLoading = ActivityIndicator()

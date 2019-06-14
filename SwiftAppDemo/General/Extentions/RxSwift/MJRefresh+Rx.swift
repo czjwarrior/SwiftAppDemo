@@ -16,7 +16,7 @@ extension Reactive where Base: MJRefreshHeader {
     public var isAnimating: Binder<Bool> {
         return Binder(self.base) { refreshControl, active in
             if active {
-                //                refreshControl.beginRefreshing()
+//                refreshControl.beginRefreshing()
             } else {
                 refreshControl.endRefreshing()
             }
@@ -29,7 +29,7 @@ extension Reactive where Base: MJRefreshFooter {
     public var isAnimating: Binder<Bool> {
         return Binder(self.base) { refreshControl, active in
             if active {
-                //                refreshControl.beginRefreshing()
+//                refreshControl.beginRefreshing()
             } else {
                 refreshControl.endRefreshing()
             }

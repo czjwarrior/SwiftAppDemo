@@ -14,6 +14,9 @@ PODS:
     - RxSwift (~> 4.0)
   - "NSObject+Rx (4.4.1)":
     - RxSwift (~> 4.3)
+  - NVActivityIndicatorView (4.7.0):
+    - NVActivityIndicatorView/Presenter (= 4.7.0)
+  - NVActivityIndicatorView/Presenter (4.7.0)
   - Result (4.1.0)
   - RxCocoa (4.3.1):
     - RxSwift (~> 4.0)
@@ -34,6 +37,7 @@ DEPENDENCIES:
   - MJRefresh
   - Moya/RxSwift (~> 13.0)
   - "NSObject+Rx"
+  - NVActivityIndicatorView (~> 4.0)
   - RxCocoa (~> 4.3.1)
   - RxGesture (~> 2.0)
   - SnapKit
@@ -51,6 +55,7 @@ SPEC REPOS:
     - MJRefresh
     - Moya
     - "NSObject+Rx"
+    - NVActivityIndicatorView
     - Result
     - RxCocoa
     - RxGesture
@@ -69,6 +74,7 @@ SPEC CHECKSUMS:
   MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
   "NSObject+Rx": 9884a92f19b610795c431e10b4e601913b59c9e9
+  NVActivityIndicatorView: b19ddab2576f805cbe0fb2306cba3476e09a1dea
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
   RxGesture: 26ede4ed13ffc6336d29dbd9a8dff229bdb72de7
@@ -77,6 +83,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   Toast-Swift: 36f4720243c8582c2be243a60a51e193c761f541
 
-PODFILE CHECKSUM: 840412c9229b6eb624097bbdfd822363f8d3904c
+PODFILE CHECKSUM: 53e09958f5670739fd1bdb2fc5ef8dc28ff24b96
 
 COCOAPODS: 1.7.1

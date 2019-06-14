@@ -33,9 +33,9 @@ class ZJSecondCell: ZJBaseTableViewCell {
         return label
     }()
 
-    func updateByData(data: String?) {
+    func updateByData(data: ZJRemainOilModel?) {
         
-        self.title.text = data
+        self.title.text = data?.recordDate
         
         self.layoutSubviews()
     }
