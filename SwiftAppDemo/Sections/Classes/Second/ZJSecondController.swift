@@ -34,11 +34,10 @@ class ZJSecondController: ZJBaseTableViewController, NVActivityIndicatorViewable
         let input = ZJSecondViewModel.Input(headerRefresh: refresh, footerRefresh: footerRefreshTrigger)
         let output = viewModel.transform(input: input)
         
-//        viewModel.loading.asObservable().bind(to: isLoading).disposed(by: rx.disposeBag)
+        viewModel.loading.asObservable().bind(to: isLoading).disposed(by: rx.disposeBag)
         viewModel.headerLoading.asObservable().bind(to: isHeaderLoading).disposed(by: rx.disposeBag)
         viewModel.footerLoading.asObservable().bind(to: isFooterLoading).disposed(by: rx.disposeBag)
         viewModel.hasNextPage.asDriver().asObservable().subscribe(onNext: { (hasNextPage) in
-            
             if !hasNextPage {
                 self.mTableView.mj_footer.endRefreshing()
                 self.mTableView.mj_footer.endRefreshingWithNoMoreData()
@@ -49,8 +48,9 @@ class ZJSecondController: ZJBaseTableViewController, NVActivityIndicatorViewable
             
         }).disposed(by: rx.disposeBag)
         
-        isLoading.subscribe(onNext: { [weak self] (loading) in
-            loading ? self?.startAnimating() : self?.stopAnimating()
+        let hud = ZJHudView.zjShowHud(hudType: .loading)
+        isLoading.subscribe(onNext: { (loading) in
+            if !loading {hud.hide(true)}
         }).disposed(by: rx.disposeBag)
         
         output.items.asObservable().subscribe(onNext: { [weak self] (item) in

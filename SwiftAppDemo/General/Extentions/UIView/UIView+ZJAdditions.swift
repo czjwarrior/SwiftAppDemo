@@ -90,4 +90,8 @@ extension UIView {
             }
         }
     }
+    
+    static func loadNib(_ nibNmae: String? = nil) -> UIView {
+        return Bundle.main.loadNibNamed(nibNmae ?? "\(self)", owner: nil, options: nil)?.first as! UIView
+    }
 }

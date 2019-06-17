@@ -38,13 +38,12 @@ class ZJBaseTableViewController: ZJBaseLayoutController {
             self?.mTableView.reloadEmptyDataSet()
         }).disposed(by: rx.disposeBag)
         
-        if #available(iOS 11.0, *) {
+//        if #available(iOS 11.0, *) {
 //            self.mTableView.contentInsetAdjustmentBehavior = .never
 //            self.mTableView.estimatedRowHeight = 0.0
-        } else {
-            // Fallback on earlier versions
-        }
-        
+//        } else {
+//            // Fallback on earlier versions
+//        }
     }
     
     lazy var mTableView: UITableView = {

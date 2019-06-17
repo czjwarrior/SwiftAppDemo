@@ -17,6 +17,12 @@ class ZJThirdController: ZJBaseLayoutController {
         self.baseView.showPopBtn()
         
         self.title = "三级页面"
+        
+        let testView = TestView.loadNib()
+        self.addToContentView(testView)
+        
+        testView.snp.makeConstraints { (make) in
+            make.edges.equalToSuperview()
+        }
     }
-
 }

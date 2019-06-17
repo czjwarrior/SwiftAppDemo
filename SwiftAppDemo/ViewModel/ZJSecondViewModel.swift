@@ -24,34 +24,31 @@ class ZJSecondViewModel: ZJBaseViewModel, ViewModelType {
         
         let repository = Variable<[ZJRemainOilModel]>([ZJRemainOilModel]())
         
-        input.headerRefresh.flatMapLatest({ [weak self] () -> Observable<[Any]> in
+        input.headerRefresh.flatMapLatest({ [weak self] () -> Observable<[ZJRemainOilModel]> in
             guard let self = self else { return Observable.just([]) }
             return self
                 .request()
                 .trackActivity(self.headerLoading)
         }).subscribe(onNext: { (items) in
-            
-            repository.value = items as! [ZJRemainOilModel]
-            
+            self.hasNextPage.value = items.count == 10
+            repository.value = items
         }).disposed(by: rx.disposeBag)
         
-        input.footerRefresh.flatMapLatest({ [weak self] () -> Observable<[Any]> in
+        input.footerRefresh.flatMapLatest({ [weak self] () -> Observable<[ZJRemainOilModel]> in
             guard let self = self else { return Observable.just([]) }
             return self
                 .request()
                 .trackActivity(self.footerLoading)
         })
             .subscribe(onNext: { (items) in
-                
-                repository.value += items as! [ZJRemainOilModel]
-                
+                self.hasNextPage.value = items.count == 10
+                repository.value += items
             }).disposed(by: rx.disposeBag)
-        
         
         return Output(items: repository)
     }
     
-    func request() -> Observable<[Any]> {
+    func request() -> Observable<[ZJRemainOilModel]> {
         
         return
             ZJNetWorkManager

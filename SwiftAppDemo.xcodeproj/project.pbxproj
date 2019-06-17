@@ -47,6 +47,8 @@
 		B5D12B7F22B2306C00B1C498 /* Observable+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D12B7D22B2306C00B1C498 /* Observable+Operators.swift */; };
 		B5D12B8122B24E2A00B1C498 /* MJRefresh+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D12B8022B24E2A00B1C498 /* MJRefresh+Rx.swift */; };
 		B5D12B8322B341B800B1C498 /* ZJRemainOilModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D12B8222B341B800B1C498 /* ZJRemainOilModel.swift */; };
+		B5D12B9122B3CD9C00B1C498 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D12B9022B3CD9C00B1C498 /* TestView.swift */; };
+		B5D12B9322B3CDA700B1C498 /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5D12B9222B3CDA700B1C498 /* TestView.xib */; };
 		B5EB05C622ADFD83006219E2 /* ZJFindController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB05BC22ADFD83006219E2 /* ZJFindController.swift */; };
 		B5EB05C722ADFD83006219E2 /* ZJMineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB05BD22ADFD83006219E2 /* ZJMineController.swift */; };
 		B5EB05C822ADFD84006219E2 /* ZJHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB05BE22ADFD83006219E2 /* ZJHomeController.swift */; };
@@ -124,6 +126,8 @@
 		B5D12B7D22B2306C00B1C498 /* Observable+Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Operators.swift"; sourceTree = "<group>"; };
 		B5D12B8022B24E2A00B1C498 /* MJRefresh+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MJRefresh+Rx.swift"; sourceTree = "<group>"; };
 		B5D12B8222B341B800B1C498 /* ZJRemainOilModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJRemainOilModel.swift; sourceTree = "<group>"; };
+		B5D12B9022B3CD9C00B1C498 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		B5D12B9222B3CDA700B1C498 /* TestView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestView.xib; sourceTree = "<group>"; };
 		B5EB05BC22ADFD83006219E2 /* ZJFindController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJFindController.swift; sourceTree = "<group>"; };
 		B5EB05BD22ADFD83006219E2 /* ZJMineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJMineController.swift; sourceTree = "<group>"; };
 		B5EB05BE22ADFD83006219E2 /* ZJHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJHomeController.swift; sourceTree = "<group>"; };
@@ -397,6 +401,8 @@
 			isa = PBXGroup;
 			children = (
 				B5EB05C022ADFD83006219E2 /* ZJThirdController.swift */,
+				B5D12B9022B3CD9C00B1C498 /* TestView.swift */,
+				B5D12B9222B3CDA700B1C498 /* TestView.xib */,
 			);
 			path = Third;
 			sourceTree = "<group>";
@@ -626,6 +632,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5D12B9322B3CDA700B1C498 /* TestView.xib in Resources */,
 				B524662822896C3400A8C362 /* LaunchScreen.storyboard in Resources */,
 				B524662522896C3400A8C362 /* Assets.xcassets in Resources */,
 				B524662322896C3300A8C362 /* Main.storyboard in Resources */,
@@ -737,6 +744,7 @@
 				B5EB05D722AE3A5D006219E2 /* UIView+ZJAdditions.swift in Sources */,
 				B5D12B5122B0DA0C00B1C498 /* ZJSecondViewModel.swift in Sources */,
 				B5D12B6222B1E22500B1C498 /* ZJBaseModel.swift in Sources */,
+				B5D12B9122B3CD9C00B1C498 /* TestView.swift in Sources */,
 				B5EB05DB22AE3AA4006219E2 /* ZJHudView.swift in Sources */,
 				B524661E22896C3300A8C362 /* AppDelegate.swift in Sources */,
 				B5D12B4222B0D8C400B1C498 /* ZJAppHelper.swift in Sources */,
