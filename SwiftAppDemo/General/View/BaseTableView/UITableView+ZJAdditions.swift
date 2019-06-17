@@ -53,7 +53,7 @@ extension UITableView {
         var targetArray = [Any]()
         var isMultiSection = false
         
-        if dataArray.first is Array<Any> {
+        if dataArray.first is [Any] {
             isMultiSection = true
         }
         
