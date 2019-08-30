@@ -1,0 +1,22 @@
+//
+//  <%= fileName %>
+//  <%= project %>
+//
+//  Created by <%= organization %> on <%= createtime %>. All rights reserved.
+//
+
+import RxSwift
+
+class <%= className %> : FYBaseViewModel, ViewModelType {
+    struct Input {
+        
+    }  
+
+    struct Output {
+        
+    }
+
+    func transform(input: <%= className %>.Input) -> <%= className %>.Output {
+
+    }
+}

@@ -1,0 +1,42 @@
+//
+//  <%= fileName %>
+//  <%= project %>
+//
+//  Created by <%= organization %> on <%= createtime %>. All rights reserved.
+//
+
+import RxSwift
+
+class <%= className %>: FYBaseLayoutController {
+    
+    // MARK: - 属性绑定
+    
+    
+    /*----------------------------   自定义属性区域    ----------------------------*/
+    
+    
+    /**************************** 以下是方法区域 ****************************/
+    
+    // MARK: - 系统方法
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    // MARK: - 父类继承方法
+    
+    override func bindViewModel() {
+
+    }
+}
+
+// MARK: - 扩展方法
+extension <%= className %> {
+    
+}

@@ -15,10 +15,30 @@ class ZJFavorController: ZJBaseLayoutController {
 
         // Do any additional setup after loading the view.
         self.title = "最爱"
+        
+        addToContentView(favorView)
     }
     
-    override func handleTabBarRootMutiClicked() {
-        print("=======llllll")
-    }
+    lazy var favorView: ZJFavorView = {
+        let view = ZJFavorView(frame: self.sContentView.bounds)
+        return view
+    }()
+    
+    
+//    override func registerCell(tableView: UITableView) {
+//        tableView.registerCell(ZJSecondCell.self)
+//    }
 
 }
+
+//extension ZJFavorController: ZJBaseTableDataSourceProrocol {
+//
+//    func numberOfRowsInSection(section: Int) -> Int {
+//        return 6
+//    }
+//
+//    func cellForRowAt(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeReusableCell(indexPath: indexPath) as ZJSecondCell
+//        return cell
+//    }
+//}

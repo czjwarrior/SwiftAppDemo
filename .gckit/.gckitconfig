@@ -1,0 +1,55 @@
+{
+  "organization": "cenzhijun",
+  "author": "cenzhijun",
+  "preset": "all",
+  "list": "none",
+  "force": false,
+  "isDeep": true,
+  "tempJPath": "tempJson",
+  "mainPath": "Sections/Classes/Common",
+  "gTypes": [
+    "viewcontroller",
+    "viewmodel",
+    "cell",
+    "tempModel"
+  ],
+  "viewcontroller": {
+    "path": "Controller",
+    "suffix": "Controller",
+    "isProject": false
+  },
+  "viewmodel": {
+    "path": "ViewModel",
+    "suffix": "ViewModel",
+    "isProject": false
+  },
+  "cell": {
+    "path": "View",
+    "suffix": "Cell",
+    "isProject": false
+  },
+"tempModel": {
+	"path": "Model",
+	"suffix": "Model",
+	"isProject": false
+},
+
+  "api": {
+    "path": "Api",
+    "suffix": "_api",
+    "isProject": false
+  },
+  "router": {
+    "path": "Module",
+    "suffix": "_router",
+    "isProject": false
+  },
+  "core": {
+    "path": "Module",
+    "suffix": "Core",
+    "isProject": false
+  },
+  "lang": "swift",
+  "prefix": "FY",
+  "cLangList": []
+}
